@@ -1593,3 +1593,48 @@ img{
   text-align: center;
   margin: 80px;
 }
+
+.bx:hover{
+  color:#292929;
+}
+
+.btn-close :hover{
+  color:#b8a07e;
+}
+
+.btn-close :active{
+  color:#b8a07e;
+}
+
+.modal-cover{
+  height: 80%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.modal-content{
+  height: 80%;
+  width: 900px;
+  margin-left: -40%;
+  opacity: 50%;
+  color:black
+}
+.modal-content:hover{
+  opacity: 100%;
+}
+
+.card-link:hover{
+  color:#b8a07e;
+}
+
+.card-header{
+  margin-right: -100px;
+}
+
+.btn-close:hover{
+  color:#b8a07e;
+}
+
+.card-bg{
+  background-image: url("assets/img/portfolio/portfolio-1.jpg");
+}
