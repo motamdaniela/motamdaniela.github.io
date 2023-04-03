@@ -552,6 +552,10 @@ p {
   }
 }
 
+.img-fluid{
+  box-shadow: -6px 8px 6px -6px #292929;
+}
+
 /*-----------------------------------------------------------------------------------*/
 /*  About
 /*-----------------------------------------------------------------------------------*/
@@ -565,6 +569,7 @@ p {
 #about .div-img-bg {
   padding-bottom: 30px;
   border: 20px solid #b8a07e;
+  border-radius: 10px;
 }
 
 #about .div-img-bg .about-img img {
@@ -575,6 +580,7 @@ p {
   height: 400px;
   -o-object-fit: cover;
   object-fit: cover;
+  box-shadow: -6px 8px 6px -6px #292929;
 }
 
 #about .about-descr .p-heading {
@@ -679,6 +685,7 @@ p {
 
 #portfolio .portfolio-item {
   margin-bottom: 30px;
+
 }
 
 #portfolio .portfolio-item .portfolio-info {
@@ -692,6 +699,8 @@ p {
   background: rgba(255, 255, 255, 0.9);
   padding: 15px;
 }
+
+
 
 #portfolio .portfolio-item .portfolio-info h4 {
   font-size: 18px;
@@ -728,6 +737,7 @@ p {
 #portfolio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 20px;
+  border-radius: 10px;
 }
 
 /*--------------------------------------------------------------
@@ -861,12 +871,27 @@ p {
 }
 
 .contact-details {
+  background-color: #f7f7f7;
+  color:#b8a07e;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 20px;
 }
 
 .contact-details li {
+  padding-bottom: 10px;
+}
+
+.contact-labels {
+  color:#b8a07e;
+  text-align: right;
+  font-weight: bold;
+  list-style: none;
+  margin: 0;
+  padding: 20px;
+}
+
+.contact-labels li {
   padding-bottom: 10px;
 }
 
@@ -1075,6 +1100,7 @@ blockquote {
   background: #f7f7f7;
   padding-top: 50px;
   padding-bottom: 50px;
+  font-size: 1px;
 }
 
 #footer .socials-media {
@@ -1545,11 +1571,25 @@ blockquote {
   }
 }
 
-
-a:hover{
-  color: #b8a07e;
+.headli li a :hover{
+  color:#b8a07e;
 }
-.iconSocial:hover{
-  color:red; 
-  opacity: 30%;
+
+.downicon{
+  text-align: center;
+  margin-left: 50px;
+  width: 500px;
+}
+
+img{
+  border-radius: 10px;
+}
+
+#logo{
+  width: 100px;
+}
+
+#quote{
+  text-align: center;
+  margin: 80px;
 }
