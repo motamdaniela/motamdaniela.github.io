@@ -460,7 +460,7 @@ p {
 
 #bg-overlay {
   background-image: 
-  linear-gradient(to left, rgba(245, 246, 252, 0.005), #292929 ),
+  linear-gradient(to left, rgba(245, 246, 252, 0.005), #b8a07e ),
   url("../img/home-bg.jpg");
   background-size: cover;
   object-fit: center/cover;
