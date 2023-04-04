@@ -1613,7 +1613,7 @@ img{
 }
 
 .modal-content{
-  height: 80%;
+  height: 84.2%;
   width: 900px;
   margin-left: -40%;
   opacity: 50%;
@@ -1637,4 +1637,16 @@ img{
 
 .card-bg{
   background-image: url("assets/img/portfolio/portfolio-1.jpg");
+}
+
+.portfolio-img{
+  height: 100%;
+}
+
+/* .portfolio-item{
+  height: 22%;
+} */
+
+video{
+  border-radius: 10px;
 }
