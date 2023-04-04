@@ -449,7 +449,21 @@ p {
 # Hero
 --------------------------------------------------------------*/
 #hero {
-  background: url("../img/home-bg.jpg") repeat scroll center center/cover;
+  background-image: 
+  url("../img/home-bg.jpg") ;
+  color: white;
+  background-size: center/cover;
+  object-fit: cover;
+  height: 100vh;
+  width: 100%;
+}
+
+#bg-overlay {
+  background-image: 
+  linear-gradient(to left, rgba(245, 246, 252, 0.005), #292929 ),
+  url("../img/home-bg.jpg");
+  background-size: cover;
+  object-fit: center/cover;
   height: 100vh;
   width: 100%;
 }
@@ -461,6 +475,7 @@ p {
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-shadow: -3px 4px 10px #292929;
 }
 
 .hero-content h1 {
@@ -1613,7 +1628,7 @@ img{
 }
 
 .modal-content{
-  height: 84.2%;
+  height: 76%;
   width: 900px;
   margin-left: -40%;
   opacity: 50%;
@@ -1643,10 +1658,27 @@ img{
   height: 100%;
 }
 
-/* .portfolio-item{
-  height: 22%;
-} */
-
 video{
   border-radius: 10px;
+}
+
+.video-content{
+  height: 80%;
+}
+
+
+#postersModal{
+  width: 100%;
+}
+
+.img-content{
+  width: 40%;
+  height: 80.1%;
+}
+#quote{
+  color:#999;
+}
+
+a:hover{
+ color: #b8a07e;
 }
