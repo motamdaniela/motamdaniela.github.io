@@ -1751,6 +1751,10 @@ a:hover{
     background-size: cover;
     object-fit: left/cover;
   }
+
+  .about-img{
+    margin-bottom: 40px;
+  }
 }
 
 @media (min-width: 991px) and (max-width: 1200px) {
