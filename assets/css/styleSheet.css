@@ -20,9 +20,6 @@ body{
     font-size: 20px;
     overflow-x: hidden;
 
-    /* font-style: italic; */
-
-
     /* .cursor__circle{
         position: absolute;
         transition: .2s ease;
@@ -55,7 +52,7 @@ a:hover{
     font-size: 20px;
 } */
 #semiTitleTxt{
-    font-size: 40px;
+    font-size: 3vw;
 }
 .titleTxt{
     font-size: 64px;
@@ -72,13 +69,13 @@ hr{
 
 /* ------------------------------- COVER */
 .coverImg{
-    width: 50vw;
+    width: 55vw;
     position: fixed;
     transition: .4s ease-out;
     filter: contrast(80%) saturate(40%) grayscale(10%) brightness(1.1) blur(10px);
 }
 .filter{
-    width: 50vw;
+    width: 55vw;
     position: fixed;
     transition: .4s ease-out;
     mix-blend-mode: multiply;
@@ -135,7 +132,7 @@ hr{
     margin-top: -12%;
     width: 98vw;
     height: 50vh;
-    text-align: right;
+    /* text-align: right; */
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -146,16 +143,23 @@ hr{
     align-self: flex-end;
     transition: .4s ease-out;
     padding-left: 40px;
-    padding-bottom: 10px;
-
-    /* background-image: url('../img/circle.svg');
-    background-repeat: no-repeat;
-    background-size: 90% 100%;
-    background-position: center; */
-    /* padding: 20px; */
-    
+    padding-bottom: 10px;    
 }
-.optdiv:hover{
+
+#divWeb{
+    background-position: revert;
+}
+#optfront{
+    margin-left: -30%;
+}
+#optweb{
+    margin-left: -60%;
+}
+#optint{
+    margin-left: -15%;
+}
+
+.coverOpt:hover{
     background-image: url('../img/circle.svg');
     background-repeat: no-repeat;
     background-size: 90% 100%;
@@ -184,7 +188,7 @@ hr{
 } */
 
 .cover{
-    height: 99vh;
+    height: 100vh;
 }
 
 /* ---- for pages*/
@@ -269,7 +273,7 @@ hr{
     transform: rotate(-90deg);
     position: fixed;
     bottom: 190px;
-    left:-230px;
+    left:-200px;
 
     /* justify-self: flex-start; */
 
@@ -308,5 +312,19 @@ a:hover:before{
 
     .animation1{
         display: none;
+    }
+
+}
+
+
+@media (max-width: 850px) {
+    body{
+        font-size: 15px;
+    }
+    .coverOptions{
+        margin-top: 15%;
+        margin-left: -5%;
+        /* width: 98vw;
+        height: 50vh; */
     }
 }

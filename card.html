@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello.</title>
+    <link href="assets/img/Vector.svg" rel="icon">
+
+    <link href="https://fonts.cdnfonts.com/css/n27" rel="stylesheet">
+</head>
+<style>
+    @font-face {
+        font-family: 'n27';
+
+        font-family: 'cyrene';
+        src:  url('../assets/fonts/CyreneRegular.woff2') format('woff2'),
+              url('../assets/fonts/CyreneRegular.woff') format('woff');
+    }
+    body{
+        background-color: #F0F0EB;
+        background-image: url('assets/img/Vector.svg');
+        background-size: 10%;
+        overflow: hidden;
+        font-family: 'N27', sans-serif;
+        font-size: 20px;
+    }
+    .body{
+        /* filter:blur(2px); */
+        width: 100%;
+        height: 101%;
+        backdrop-filter: blur(5px);
+        position: absolute;
+        margin: -10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .italic{
+        font-family: 'N27', sans-serif;;
+        font-style: italic;
+    }
+    .cyrene{
+        font-family: cyrene;
+    }
+    .green{
+        color: #3AE170;
+    }
+    #card{
+        /* width: 1050px;
+        height: 600px;
+        aspect-ratio: 3.5/2; */
+        width: max(105px, 60vw);
+	    aspect-ratio: 16 / 10;
+        background-color: #F0F0EB;
+        box-shadow: 0 5px 10px rgb(0 0 0 / 1);
+        padding: 20px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        overflow: hidden;
+    }
+    #frontDesc{
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+
+        position: relative;
+    }
+    hr, .descShort{
+        width: 100%;
+    }
+    .descShort{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        /* align-content: space-between; */
+    }
+    #bottomPart{
+        display: flex;
+        /* flex-direction: column; */
+        justify-content: space-between;
+        align-self: flex-start;
+        width: 100%;
+        margin-top: 31%;
+    }
+    #myName{
+        display: flex;
+        flex-direction: column;
+        
+        margin-left: -6%;
+        text-wrap: nowrap;
+        font-size: 7vw;
+    }
+    #lastName{
+        margin-left: 30%;
+    }
+    #arrow{
+        font-size: 10vw;
+        display: flex;
+        align-self: flex-end;
+        justify-self: flex-end;
+        text-align: end;
+    }
+    button{
+        border-radius: 2px;
+
+    }
+</style>
+<body>
+    <div class="body">
+        <div id="card">
+            <div id="frontDesc">
+                <div class="descShort">
+                    <span>web developer.</span>
+                    <span>web designer.</span>
+                    <span>porto, portugal.</span>
+                </div>
+                <hr>
+            </div>
+
+            <div id="bottomPart">
+                    <div id="myName" >
+                        <span class="italic">daniela</span>
+                        <span id="lastName" class="italic">monteiro.</span>
+                    </div>
+                    <button id="arrow" class="italic green">↘</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
