@@ -17,15 +17,17 @@
               url('../assets/fonts/CyreneRegular.woff') format('woff');
     }
     body{
-        background-color: #F0F0EB;
+        background-color: #a0a09d;
         background-image: url('assets/img/Vector.svg');
-        background-size: 10%;
+        background-size: 15%;
         overflow: hidden;
         font-family: 'N27', sans-serif;
-        font-size: 20px;
+        font-size: 1.5vw;
+        color:#121113;
     }
     .body{
         /* filter:blur(2px); */
+        /* background-color: #121113; */
         width: 100%;
         height: 101%;
         backdrop-filter: blur(5px);
@@ -70,8 +72,9 @@
 
         position: relative;
     }
-    hr, .descShort{
+    hr{
         width: 100%;
+        border: 1px solid #121113;
     }
     .descShort{
         display: flex;
@@ -104,6 +107,7 @@
         align-self: flex-end;
         justify-self: flex-end;
         text-align: end;
+        margin-right:-2%
     }
     button{
         border-radius: 2px;
@@ -124,8 +128,8 @@
 
             <div id="bottomPart">
                     <div id="myName" >
-                        <span class="italic">daniela</span>
-                        <span id="lastName" class="italic">monteiro.</span>
+                        <span class="italic">d<span class="cyrene">a</span>niela</span>
+                        <span id="lastName" class="italic">mont<span class="cyrene">e</span>iro.</span>
                     </div>
                     <button id="arrow" class="italic green">↘</button>
             </div>
