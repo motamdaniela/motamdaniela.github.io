@@ -14,10 +14,10 @@
         <div id="mainImg">
         </div>
         <img  alt="" class="coverImg">
-        <!-- <img src="/assets/img/grain.png" alt="" class="filter">         -->
-            
-            <div class="coverContent">
-                <div id="infoContent" class="blurover">
+        <img src="assets/img/texture.svg" alt="" class="filter blurover">        
+        
+        <div class="coverContent">
+            <div id="infoContent" class="blurover">
                     <p class="bodyTxt">daniela monteiro</p>
                     <p class="bodyTxt">web developer & designer</p>
                     <p class="bodyTxt">student</p>
@@ -31,21 +31,21 @@
                 <div>
                     <div class="coverOptions">
                         <div class="optdiv">
-                            <a href="#mywork">
+                            <a onclick="scrollSmoothTo('mywork')">
                             <span class="coverOpt superTxt italic" id="optfront">front-<span class="cyrene">e</span>nd</span>
                             </a>
                         </div>
                         <div class="optdiv" id="divWeb">
-                            <a href="#mywork">
+                            <a onclick="scrollSmoothTo('mywork')">
                             <span class="coverOpt superTxt italic" id="optweb">web de<span class="cyrene">s</span>ign</span>
                             </a>
                         </div>
-                        <div class="optdiv">
+                        <div onclick="scrollSmoothTo('mywork')">
                             <a href="#mywork">
                             <span class="coverOpt superTxt italic" id="optdig">digital <span class="cyrene">b</span>randing</span>
                             </a>
                         </div>
-                        <div class="optdiv">
+                        <div onclick="scrollSmoothTo('mywork')">
                             <a href="#mywork">
                             <span class="coverOpt superTxt italic" id="optint"><span class="green">&</span> in<span class="cyrene">t</span>eractivity.</span>
                             </a>
@@ -188,19 +188,20 @@
             <img src="assets/img/Vector.svg" alt="" id="navBtn">
             <div class="navLinks">
                 <div>
-                    <a id="linkWrk" href="#mywork"><span>my work</span></a>
+                    <a id="linkWrk" onclick="scrollSmoothTo('mywork')"><span>my work</span></a>
                 </div>
                 <div>
-                    <a id="linkAbt" href="#abtme">about me</a>
+                    <a id="linkAbt" onclick="scrollSmoothTo('abtme')">about me</a>
                 </div>
                 <div>
-                    <a id="linkSrv" href="#mysrvcs">my skills</a>
+                    <a id="linkSrv" onclick="scrollSmoothTo('mysrvcs')">my skills</a>
                 </div>
                 <div>
-                    <a id="linkCnt" href="#contactme">contact me</a>
+                    <a id="linkCnt" onclick="scrollSmoothTo('contactme')">contact me</a>
                 </div>
             </div>
-        </div>
+        </div>  
+
             
     <script src="assets/js/mainFile.js"></script>
 </body>

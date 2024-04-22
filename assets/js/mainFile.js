@@ -9,6 +9,18 @@ let navBtn = document.querySelector('#navBtn');
 
 let hmoves = document.querySelectorAll('.hmove');
 
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+
+  function scrollSmoothTo(elementId) {
+    var element = document.getElementById(elementId);
+    element.scrollIntoView({
+      block: 'start',
+      behavior: 'smooth'
+    });
+  }
 //infoContent
 //hlInfo
 //coverInfo
@@ -25,6 +37,7 @@ let hmoves = document.querySelectorAll('.hmove');
 // filter.style.right = img.style.right
 // filter.style.bottom = img.style.bottom
 
+// function MouseInteractions(){}
 if(window.innerWidth > 800){
     img.style.right = 
     // filter.style.right =
@@ -41,7 +54,7 @@ if(window.innerWidth > 800){
         // for the cover image
         img.style.right = 
         // filter.style.right = 
-        (e.clientX - (window.innerWidth/2 - img.width*1.5))+"px";
+        (e.clientX - (window.innerWidth/1.8 - img.width*1.5))+"px";
         img.style.bottom = 
         // filter.style.bottom = 
         (e.clientY - (window.innerHeight/2 - img.height/3))+"px";
@@ -133,8 +146,6 @@ window.addEventListener('scroll', ScrollAnims)
 window.addEventListener('resize', ScrollAnims)
 
 function ScrollAnims(){
-
-
     const htmlElement = document.documentElement
      const percentScroll = htmlElement.scrollTop / htmlElement.clientHeight
      htmlElement.style.setProperty("--scroll", Math.min(percentScroll*100, 100))
@@ -148,16 +159,21 @@ function ScrollAnims(){
         console.log(hmove.style.left);
         // var position = element.getBoundingClientRect();
         // if(position.top >= 0 && position.bottom <= window.innerHeight){
-             hmove.style.left = (percentScroll -4)*25+"%"
+             hmove.style.left = (percentScroll -4)*30+"%"
         // }
      });
     
+     //! LISTENER P QUANDO O SCROLL VAI DE <100 P 100
     if (window.scrollY > 100) {
+        navLinks.style.animation = 'close 0.3s ease-in both';
+        navLinks.style.animationDirection = 'normal';
         navBtn.style.display = 'flex';
-        navLinks.style.display = 'none';
+        // navLinks.style.display = 'none';
     }else{
         navBtn.style.display = 'none';
-        navLinks.style.display = 'flex';
+        navLinks.style.animation = 'close 0.3s ease-in both';
+        navLinks.style.animationDirection = 'reverse';
+        // navLinks.style.display = 'flex';
     }
 }
 
@@ -166,6 +182,18 @@ document.addEventListener('scrollend', function(){
         // hmove.classList.remove('anim')
     });
 })
+
+// navBtn.addEventListener('mouseover', () => {
+//     navLinks.style.animation = 'close 0.3s ease-in both';
+//     navLinks.style.animationDirection = 'reverse';
+//     // navBtn.style.display = 'none';
+// });
+
+// navBtn.addEventListener('mouseleave', () => {
+//     navLinks.style.animation = 'close 0.3s ease-in both';
+//     navLinks.style.animationDirection = 'normal';
+//     navBtn.style.display = 'flex';
+// });
 
 
 // list of projects -----------

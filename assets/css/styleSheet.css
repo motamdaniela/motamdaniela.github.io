@@ -9,8 +9,10 @@ purple #713D92*/
     font-family: 'n27';
 
     font-family: 'cyrene';
-    src:  url('../assets/fonts/CyreneRegular.woff2') format('woff2'),
-          url('../assets/fonts/CyreneRegular.woff') format('woff');
+    src:  url('/assets/fonts/CyreneRegular.woff2') format('woff2'),
+          url('/assets/fonts/CyreneRegular.woff') format('woff');
+    font-style: normal;
+    
 }
 @import url('https://fonts.cdnfonts.com/css/n27');
 
@@ -56,8 +58,8 @@ a{
     text-decoration: none;
     color:#121113;
     transition: 1s ease-in-out1;
-
 }
+
 /* a:hover{
     font-style: italic;
 } */
@@ -74,7 +76,7 @@ a{
 }
 .superTxt{
     font-size: 100px;
-    font-size: 10vh;
+    font-size: 5vw;
 }
 
 hr{
@@ -89,19 +91,20 @@ hr{
     transition: .4s ease-out;
     filter: contrast(80%) saturate(40%) grayscale(10%) brightness(1.1) blur(10px);
 
-    background: linear-gradient(217deg, #49AE30, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #49AE30, rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, #49AE30, rgba(0, 0, 255, 0) 70.71%);
+    background: linear-gradient(217deg, #121113, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #3AE170 , rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, #713D92, rgba(0, 0, 255, 0) 70.71%);
     border-radius: 50%;
     font-size: 250px;
     height: 2em;
     width: 2em;
-    filter: blur(100px);
+    filter: blur(50px);
 }
 .filter{
-    width: 55vw;
+    width: 100vw;
     position: fixed;
-    transition: .4s ease-out;
+    /* transition: .4s ease-out; */
+
     mix-blend-mode: multiply;
-    filter:blur(10px);
+    /* filter:blur(2px) hue-rotate(100deg); */
 }
 
 .coverContent{
@@ -120,6 +123,7 @@ hr{
 }
 .cyrene{
     font-family: cyrene;
+    font-style: normal;
 }
 .green{
     color: #3AE170;
@@ -215,10 +219,16 @@ hr{
 
 @keyframes close {
     0% {
-      transform: translate(0, 0);
+        transform: rotate(0deg);
+        /* rotation-point:0% 0%; */
+        transform-origin:0 100% ;
+        opacity: 100%;
     }
     100% {
-      transform: translate(-100%, 0);
+        transform: rotate(90deg);
+        /* rotation-point:0% 0%; */
+        transform-origin: 0 100%;
+        opacity: 0%;
     }
   }
 
@@ -228,40 +238,47 @@ hr{
     display:none;
     bottom: 0vh;
     left: 10vh;
+    transform: rotate(0deg);
+    transition: .4s ease-out;
     /* flex-direction: row; */
 }
+#navBtn:hover{
+    transform: rotate(90deg);
+    transition: .4s ease-out;
+}
+
 #navbar{
     display:flex;
     flex-direction: row;
-    width: 56vh;
+    width: 80vh;
     height: 15vh;
     transform: rotate(-90deg);
     position: fixed;
-    /* position: absolute; */
-    bottom: 15vh;
-    left:-16vh;    
+    bottom: 28vh;
+    left:-28vh;    
     align-items: flex-start;
     transition: .4s ease-out;
-    
-    /* a{
-        padding-right: 10px;
-    } */
 }
+
 .navLinks{
     position:relative;
     display:flex;
     flex-direction: row;
     text-align: center;
+    /*! jdkhed */
+    transition: .4s ease-out;
+    /* animation: none; */
 }
 .navLinks div{
     position: relative;
-    width: 13vh;
+    width: 15vh;
     transition: .4s ease-out;
     a{
         width: 13vh;
         /* position: relative; */
         /* padding: 1vh; */
         position: absolute;
+        cursor: pointer;
     }
 }
 
@@ -308,6 +325,7 @@ a.navLinks :hover{
     position: absolute;
     /* left: 1; */
     /* animation: hmove 20s linear infinite; */
+    left: var(percentScroll);
     overflow: clip;
 }
 
@@ -326,6 +344,9 @@ a.navLinks :hover{
     height: 100vh;
     margin-bottom: -10px;
     transform: .3s ease;
+    
+    background-image: url("/assets/img/rectTest.png");
+    background-size: 100%;
 }
 .pagebody{
     padding: 10px 20px 10px 20px;
