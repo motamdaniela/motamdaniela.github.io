@@ -1,7 +1,7 @@
 /*colors
  black #121113
 white #F0F0EB
-green #3AE170
+green #3AE170      alternative #7B9F60
 purple #713D92*/
 
 /* custom fonts */
@@ -16,10 +16,14 @@ purple #713D92*/
 }
 @import url('https://fonts.cdnfonts.com/css/n27');
 
+
+.invisible{
+    display: none;
+}
 /** cursor */
-/* html {
+html {
     cursor: none;
-} */
+}
 
 html{
     scroll-behavior: smooth;
@@ -34,30 +38,33 @@ body{
     margin: 0 0;
 
     /** cursor */
-    /* .cursor__circle{
-        position: absolute;
-        transition: .2s ease;
-        opacity: 30%;
-        
-        &__circle {
-            top: 0;
-            left: 0;
-            mix-blend-mode: difference;
-            z-index: 1000;
+    .cursor__circle{
+        pointer-events: none;
+        overflow-y : none;
+        position: fixed;
+        /* transition: 0.5s ease; */
+        /* opacity: 30%; */
             
             circle {
                 fill:#121113;
                 fill: white;
-                mix-blend-mode: difference;
-          }
-        }
-      } */
+                /* mix-blend-mode: difference; */
+            }
+    }
+}
+
+.ball{
+    top: 0;
+    left: 0;
+    z-index: 10;
+    mix-blend-mode:difference;
 }
 
 a{
     text-decoration: none;
     color:#121113;
     transition: 1s ease-in-out1;
+    cursor: none;
 }
 
 /* a:hover{
@@ -91,15 +98,15 @@ hr{
     transition: .4s ease-out;
     filter: contrast(80%) saturate(40%) grayscale(10%) brightness(1.1) blur(10px);
 
-    background: linear-gradient(217deg, #121113, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #3AE170 , rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, #713D92, rgba(0, 0, 255, 0) 70.71%);
+    background: linear-gradient(217deg, #7B9F60, rgba(255, 0, 0, 0) 70.71%), linear-gradient(127deg, #7B9F60 , rgba(0, 255, 0, 0) 70.71%), linear-gradient(336deg, #7B9F60, rgba(0, 0, 255, 0) 70.71%);
     border-radius: 50%;
     font-size: 250px;
-    height: 2em;
-    width: 2em;
-    filter: blur(50px);
+    min-height: 2em;
+    min-width: 2em;
+    filter: blur(80px);
 }
 .filter{
-    width: 100vw;
+    height: 102vw;
     position: fixed;
     /* transition: .4s ease-out; */
 
@@ -127,6 +134,7 @@ hr{
 }
 .green{
     color: #3AE170;
+    color: #7B9F60;
 }
 #infoContent{
     margin-left: 20px;
@@ -187,7 +195,7 @@ hr{
     background-repeat: no-repeat;
     background-size: 90% 100%;
     background-position: center;
-    cursor: pointer;
+    /* cursor: pointer; */
 }
 /* .optdiv{
     transition:transform 500ms ease;
@@ -278,7 +286,7 @@ hr{
         /* position: relative; */
         /* padding: 1vh; */
         position: absolute;
-        cursor: pointer;
+        /* cursor: pointer; */
     }
 }
 
@@ -325,16 +333,22 @@ a.navLinks :hover{
     position: absolute;
     /* left: 1; */
     /* animation: hmove 20s linear infinite; */
-    left: var(percentScroll);
+    /* left: var(percentScroll); */
     overflow: clip;
 }
 
 .hmove2{
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
     /* animation-delay: 5s;
     display: none; */
     /* padding-left: -200%;
     left: 100%; */
-    display: none;
+    /* left: var(percentScroll); */
+    overflow: clip;
+    /* display: none; */
   }
 
 .pageSection{
@@ -352,26 +366,67 @@ a.navLinks :hover{
     padding: 10px 20px 10px 20px;
 }
 
+.scrollPage{
+    height: auto;
+}
+
 /* --- for my work section */
-.thumbnail, .thumbnailFilter{
-    position: absolute;
-    width: 500px;
+.thumbnail{
+    /* position: absolute; */
+    width: 100%;
     filter: contrast(80%) saturate(40%) grayscale(10%) brightness(1.1);
 }
 .thumbnailFilter{
     position: relative;
-    width: 500px;
+    width: 30%;
     transition: .4s ease-out;
     mix-blend-mode: multiply;
     /* filter:blur(10px); */
 }
 
-.work{
-    width: 500px;
+.collectionWorks{
+    padding-top: 60px;
+    padding-bottom: 60px;
+
 }
+
+.work{
+    width: 30%;
+
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.work:hover{
+    
+}
+
+#showingImg{
+    position: fixed;
+    pointer-events: none;
+
+    transition: 0.5s ease;
+    height: 400px;
+    display: none;
+}
+
 .workTitle{
-    position: relative;
-    text-align: right;
+    margin: 0px;
+    /* text-align: right; */
+}
+
+.works{
+    display: flex;
+    flex-direction: row;
+    /* width: 100%; */
+    justify-content: space-between;
+}
+.worksDesc{
+    width: 20%;
+}
+
+.txtRightAlign{
+    text-align: end;
 }
 
 
