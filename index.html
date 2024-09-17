@@ -41,7 +41,8 @@
   <header id="header" class="fixed-top ">
     <div class="container d-flex align-items-center justify-content-between">
 
-      <a href="index.html" class="logo"><img src="assets/img/Vector.svg" alt="" id="logo"></a>
+      <div></div>
+      <!-- <a href="index.html" class="logo"><img src="assets/img/Vector.svg" alt="" id="logo"></a> -->
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -191,14 +192,23 @@
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
               <li data-filter=".filter-web">Web Apps</li>
-              <li data-filter=".filter-3d">3d</li>
+              <li data-filter=".filter-games">Games</li>
               <li data-filter=".filter-oth">Others</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container">
-
+          
+          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
+            <img src="assets/img/portfolio/exUnity.png" class="img-fluid portfolio-img" alt=""  data-bs-toggle="modal" data-bs-target="#unityexModal">
+            <div class="portfolio-info">
+              <h4>mini-games</h4>
+              <p>A collection of mini-games developed with Unity</p>
+              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#unityexModal"></i>
+                <a href="https://ipppt-my.sharepoint.com/personal/40210288_esmad_ipp_pt/_layouts/15/onedrive.aspx?view=0&id=%2Fpersonal%2F40210288%5Fesmad%5Fipp%5Fpt%2FDocuments%2FExercicios%5FUnity"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
           
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <img src="assets/img/portfolio/evergreen.png" class="img-fluid portfolio-img" alt=""  data-bs-toggle="modal" data-bs-target="#evergreenModal">
@@ -209,19 +219,8 @@
                 <a href="https://github.com/motadaniela/Evergreen"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
               </div>
             </div>
-            
-            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-              <img src="assets/img/portfolio/tw.png" class="img-fluid portfolio-img" alt=""  data-bs-toggle="modal" data-bs-target="#exampleModal">
-              <div class="portfolio-info">
-                <h4>Training Wheels</h4>
-                <p>An app to aid in driving students.</p>
-                <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-                <a href="https://github.com/motadaniela/Training-Wheels" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
 
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-oth">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
             <img src="assets/img/portfolio/eco-meow.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#ecomeowModal">
             <div class="portfolio-info">
               <h4>Eco-Meow</h4>
@@ -231,13 +230,23 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-3d">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
             <img src="assets/img/portfolio/eco-meow2.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#ecomeow2Modal">
             <div class="portfolio-info">
               <h4>Eco-Meow 2.0</h4>
               <p>A game made with three.js based off the previous game, Eco-Meow.</p>
               <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#ecomeow2Modal"></i>
               <a href="https://github.com/motadaniela/Eco-Meow/tree/main/Eco-Meow2.0"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <img src="assets/img/portfolio/tw.png" class="img-fluid portfolio-img" alt=""  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <div class="portfolio-info">
+              <h4>Training Wheels</h4>
+              <p>An app to aid in driving students.</p>
+              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
+              <a href="https://github.com/motadaniela/Training-Wheels" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
             </div>
           </div>
 
@@ -251,7 +260,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-3d">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
             <img src="assets/img/portfolio/aframe.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#aframeModal">
             <div class="portfolio-info">
               <h4>3d exercise with a-frame</h4>
@@ -282,14 +291,14 @@
               </div>
             </div>
             
-            <div class="col-lg-4 col-md-6 portfolio-item filter-3d">
+            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-oth">
               <img src="assets/img/portfolio/donut.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#donutModal">
               <div class="portfolio-info">
                 <h4>Donut made in blender</h4>
                 <p>A work in progress.</p>
                 <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#donutModal"></i>
               </div>
-            </div>
+            </div> -->
 
         </div>
 
@@ -317,6 +326,7 @@
                   <ul class="contact-labels">
                     <li><span>My name</span></li>
                     <li><span>My email</span></li>
+                    <li><span>My github</span></li>
                   </ul>
                 </div>
   
@@ -326,6 +336,7 @@
                   <ul class="contact-details">
                     <li><span>Daniela Monteiro</span></li>
                     <li><span>mota.mdaniela@gmail.com</span></li>
+                    <li><a><span>github.com/motamdaniela</span></a></li>
                   </ul>
                 </div>
               </div>
@@ -374,7 +385,23 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+<!-- unity Ex Modal -->
+<div class="modal modal-xl fade" id="unityexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
 
+    <video src="assets/videos/ExUnity.mp4" class=" img-fluid under" autoplay loop></video>
+    
+    <div class="modal-content video-content">
+      <div class="modal-body">
+          <p>A collection of 3 mini games developed in Unity meant to explore various aspects of game development, from the cenerious and ambients, to the development of the code itself.</p>
+          <p>As these served as a more in depth introduction to c# and many of the various features Unity has to offer.</p>
+          <p></p>
+          <a class="card-link"  target="_blank" href="https://ipppt-my.sharepoint.com/personal/40210288_esmad_ipp_pt/_layouts/15/onedrive.aspx?view=0&id=%2Fpersonal%2F40210288%5Fesmad%5Fipp%5Fpt%2FDocuments%2FExercicios%5FUnity"><b>Check them out!</b></a>
+      </div>
+    </div>
+    
+  </div>
+</div>
 
 
   <!-- posters Modal -->
