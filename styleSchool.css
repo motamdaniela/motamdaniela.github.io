@@ -1,0 +1,174 @@
+body{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/photo-1603665143615-4b7cafb5366b?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-image: url("./bg.png");
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 80px;
+    padding-top: 40px;
+    padding-bottom: 10px;
+    color: rgb(36, 20, 54);
+}
+
+@keyframes move_left {
+    from {
+    margin-left: 100px;
+    opacity: 0;
+    }
+    to {
+    margin-left: 0px;
+    opacity: 1;
+    }
+}
+@keyframes move_right {
+    from {
+    margin-right: 100px;
+    opacity: 0;
+    }
+    to {
+    margin-right: 0px;
+    opacity: 1;
+    }
+}
+
+@keyframes move_bottom {
+    from {
+    margin-top: 60px;
+    opacity: 0;
+    }
+    to {
+    margin-top: 0px;
+    opacity: 1;
+    }
+}
+
+h1{
+    font-size: 34px;
+    color:rgb(113, 25, 213);
+    text-transform: uppercase;
+    font-weight:bold;
+}
+.title1{
+    animation-name: move_left;
+    animation-duration: 0.6s;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+
+}
+.title2{
+    text-align: end;
+    animation-name: move_right;
+    animation-duration: 0.6s;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+}
+.box{
+    background-color: rgba(190, 160, 224, 0.1);
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+    margin-bottom: 50px;
+    box-shadow: 0 1px 1px rgba(66, 37, 100, 0.06), 
+    0 2px 2px rgba(66, 37, 100, 0.06), 
+    0 4px 4px rgba(66, 37, 100, 0.06), 
+    0 8px 8px rgba(66, 37, 100, 0.06),
+    0 16px 16px rgba(66, 37, 100, 0.06);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    animation-name: move_bottom;
+    animation-duration: 0.8s;
+    animation-direction: normal;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    padding: 40px;
+}
+.indexBox{
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.assDiv{
+    padding: 15px;
+    max-width: 200px;
+}
+
+a{
+    font-size: 22px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color:rgb(113, 25, 213);
+    text-decoration: none;
+    transition: 0.3s ease-out;
+
+    display: inline-block;
+    position: relative;
+}
+a:hover{
+    font-size: 23px;
+}
+
+a::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgb(113, 25, 213);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.nodecor{
+    font-size: inherit;
+    text-transform: none;
+    text-decoration: none;
+}
+.nodecor:hover{
+    font-size: inherit;
+    text-transform: none;
+    text-decoration: none;
+    a{
+        transform: none;
+    }
+}
+
+h2{
+    color:rgb(113, 25, 213);
+    text-transform: capitalize;
+    margin-top: 40px;
+}
+img{
+    width: 70%;
+    height: 70%;
+    border-radius: 6px;
+    display: flex;
+}
+table{
+    border-radius: 6px;
+    border-collapse: collapse;
+    backdrop-filter: blur(10px);
+}
+th, td {
+    border-right: 2px solid rgb(36, 20, 54);
+    padding: 5px;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+#bottomBtn{
+    margin-left: 90%;
+    margin-bottom: 40px;
+}
+li{
+    padding: 10px;
+}

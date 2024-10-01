@@ -474,11 +474,6 @@ a.navLinks :hover{
     text-align: end;
 }
 
-.rowJustified{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
 
 .alignDown{
     align-items: end;
@@ -495,6 +490,12 @@ a.navLinks :hover{
 
 .padded{
     padding: 20px;
+}
+
+.rowJustified{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .colJustified{
@@ -535,6 +536,14 @@ a.navLinks :hover{
     a{
         font-style: normal;
     }
+}
+
+
+
+
+/*! PENULTIMA SECCAO */
+#mysrvcs{
+    display: none;
 }
 
 @media (max-width: 850px) {
