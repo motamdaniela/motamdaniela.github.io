@@ -44,7 +44,7 @@ body{
 
 h1{
     font-size: 34px;
-    color:rgb(113, 25, 213);
+    /* color:rgb(113, 25, 213); */
     text-transform: uppercase;
     font-weight:bold;
 }
@@ -142,7 +142,7 @@ a:hover::after {
 }
 
 h2{
-    color:rgb(113, 25, 213);
+    /* color:rgb(113, 25, 213); */
     text-transform: capitalize;
     margin-top: 40px;
 }
