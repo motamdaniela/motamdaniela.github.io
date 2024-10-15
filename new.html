@@ -6,6 +6,7 @@
     <title>my portfolio.</title>
     <link href="assets/img/Vector.svg" rel="icon">
 
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
     <link href="assets/css/styleSheet.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/n27" rel="stylesheet">
 
@@ -312,7 +313,9 @@
         <div id="navbar" class="blurover ">
 
             <div class="">
-                <img src="assets/img/Vectorr.svg" alt="" id="navBtn">
+                <a class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#menuModal">
+                    <img src="assets/img/Vectorr.svg" alt="" id="navBtn">
+                </a>
             </div>
             
             <div class="navLinks">
@@ -328,7 +331,6 @@
                 <div>
                     <a id="linkCnt" onclick="scrollSmoothTo('contactme')">contact me</a>
                 </div>
-                <a class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#menuModal">ahhhhhhh</a>
             </div>
         </div>  
 
@@ -345,32 +347,27 @@
             
 
 
-
-
 <!-- modais -->
 <div class="modal modal-xl fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
   
-      <video src="assets/videos/donut.mp4" class=" img-fluid under" autoplay loop></video>
+      <video src="assets/videos/ExUnity.mp4" class=" img-fluid under" autoplay loop></video>
       
       <div class="modal-content video-content">
         <div class="modal-body">
-            <p>I've always been interested in learning how to use blender and recently got the oportunity to finally start my journey with this popular tool.</p>
-            <p>This small project, unfortunately, is still not complete, but i plan to keep on working on it after finishing another 3d project I'm doing for school!</p>
-            <p>Although I'm still a begginer, since I've finally got my hands on blender I will be dedicationg more and more of my time on creating all sorts of 3d projects from now on and, hopefully I'll get better at it!</p>
-            
-            <br/>
-            <a class="card-link" href="https://drive.google.com/file/d/1fK-167oxDhn7kEZw74l6LyYNB5siWbL8/view?usp=drive_link" target="_blank" ><b>Check out the video in more detail</b></a>
+            <p>A collection of 3 mini games developed in Unity meant to explore various aspects of game development, from the cenerious and ambients, to the development of the code itself.</p>
+            <p>As these served as a more in depth introduction to c# and many of the various features Unity has to offer.</p>
+            <p></p>
+            <a class="card-link"  target="_blank" href="https://ipppt-my.sharepoint.com/personal/40210288_esmad_ipp_pt/_layouts/15/onedrive.aspx?view=0&id=%2Fpersonal%2F40210288%5Fesmad%5Fipp%5Fpt%2FDocuments%2FExercicios%5FUnity"><b>Check them out!</b></a>
         </div>
       </div>
       
     </div>
   </div>
 
-
-
          
          <script src="assets/js/mainFile.js"></script>
          <script src="assets/js/mainFunctions.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
