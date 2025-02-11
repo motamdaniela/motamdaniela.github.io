@@ -59,6 +59,7 @@ p {
   font-size: 15px;
   color: #999999;
   line-height: 28px;
+  white-space: pre-line;
 }
 
 ::-moz-selection {
@@ -602,7 +603,7 @@ p {
 
 #about .about-descr .p-heading {
   font-family: "Playfair Display", serif;
-  font-size: 28px;
+  font-size: 20px;
   text-align: left;
 }
 
