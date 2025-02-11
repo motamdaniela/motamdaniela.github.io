@@ -86,6 +86,22 @@
 
                 <div class="collectionWorks">
 
+                    <!-- <a href="/mywork.html?project=kendir">
+                        <div class="works" onmouseover="OnHoverShowImg('donut')" onmouseleave="OnHoverHideImg()">
+                            <h3 class="titleTxt workTitle">Shifting Memories</h3>
+                            <p class="worksDesc txtRightAlign">A 2d pixel game made with WebGL</p>
+                        </div>
+                    </a>
+                        <hr /> -->
+
+                    <!-- <a href="/mywork.html?project=kendir">
+                        <div class="works" onmouseover="OnHoverShowImg('donut')" onmouseleave="OnHoverHideImg()">
+                            <h3 class="titleTxt workTitle">WORKSHOP MONICA SANTOS</h3>
+                            <p class="worksDesc txtRightAlign">A 2d pixel game made with WebGL</p>
+                        </div>
+                    </a>
+                        <hr /> -->
+
                     <a href="/mywork.html?project=kendir">
                         <div class="works" onmouseover="OnHoverShowImg('donut')" onmouseleave="OnHoverHideImg()">
                             <h3 class="titleTxt workTitle">Educational Games for Kendir</h3>
@@ -173,8 +189,8 @@
 
 <!-- ----------------------   about me -->
         <div class="pageSection" id="abtme">
-                <hr />
-                <div class="titleDiv">
+            <hr />
+            <div class="titleDiv">
                     <p class="hmove2">
                        <span class="pageTitle" id="semiTitleTxt">about me <span class="green">↘</span>
                         about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span>
@@ -194,33 +210,37 @@
             <div class="pagebody rowJustified">
                 <div id="mePart" class="displayImg">
                     <div class="rowJustified">
-                        <p>I'm a 21 year old</p>
+                        <p>I'm a 22 year old</p>
                         <p>web designer,</p>
                         <p>web developer,</p>
                         <p>game developer.</p>
                     </div>
                     <hr />
                     <div class="rowJustified">
-                        <p>I'm a 21 year old</p>
+                        <p>I'm a 22 year old</p>
                         <p>web designer,</p>
                         <p>web developer,</p>
                         <p>game developer.</p>
                     </div>
 
-                    <img src="/assets/img/home-bg.webp" alt="" class="thumbnail">
-                    <p class="superTxt" class="italic">D<span class="cyrene">a</span>niela</p>
-                    <p class="superTxt" class="italic">Mont<span class="cyrene">e</span>iro.</p>
+                    <div>
+                        <img src="/assets/img/home-bg.webp" alt="" class="thumbnail">
+                        <p id="firstName" class="superTxt italic">D<span class="cyrene">a</span>niela</p>
+                        <p id="lastName" class="superTxt italic">Mont<span class="cyrene">e</span>iro.</p>
+                    </div>
                 </div>
 
-                <div>
+                <div class="txtRightAlign">
+                    <p>my skills <span class="green">↘</span></p>
 
-                    <p>
-                        hiii
-                    </p>
-
+                    <div>
+                        <p class="smallTxt">vue</p>
+                        <p class="middleTxt">three.js</p>
+                        <p class="bigTxt">webGL</p>
+                        <p class="biggerTxt">bootstrap</p>
+                        <p class="giantTxt">a-frame</p>
+                    </div>
                 </div>
-
-
             
             </div>
         </div>
@@ -289,17 +309,19 @@
     
                     </div>
                 
-                    <div class="alignDown semiTxt">
+                    <div class="alignDown semiTxt interactLinks">
+                        <hr />
                         <a href="mailto: mota.mdaniela@gmail.com" target="_blank" class="semiTxt">email me.</a>
-                        <p>email me.</p>
                         <hr />
-                        <p>my linkedin.</p>
+                        <a href="https://github.com/motamdaniela" target="_blank" class="semiTxt">my github.</a>
                         <hr />
-                        <p>my github</p>
-                        <hr />
-                        <p>my gitlab.</p>
-                        <hr />
-                        <p>my figma.</p>
+                        <a href="https://www.linkedin.com/in/motamdaniela/" target="_blank" class="semiTxt">my linked in.</a>
+                        <!-- <hr />
+                        <a href="https://gitlab.com/motamdaniela" target="_blank" class="semiTxt">email me.</a>
+                        <p>my gitlab.</p> -->
+                        <!-- <hr />
+                        <a href="https://www.figma.com/@motamdaniela" target="_blank" class="semiTxt">email me.</a>
+                        <p>my figma.</p> -->
                         <hr />
                     </div>
 
@@ -313,21 +335,21 @@
         <div id="navbar" class="blurover ">
 
             <div class="">
-                <a class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#menuModal">
+                <a href="menu.html" >
                     <img src="assets/img/Vectorr.svg" alt="" id="navBtn">
                 </a>
             </div>
             
-            <div class="navLinks">
+            <div class="navLinks interactLinks">
                 <div>
                     <a id="linkWrk" onclick="scrollSmoothTo('mywork')"><span>my work</span></a>
                 </div>
                 <div>
                     <a id="linkAbt" onclick="scrollSmoothTo('abtme')">about me</a>
                 </div>
-                <div>
+                <!-- <div>
                     <a id="linkSrv" onclick="scrollSmoothTo('mysrvcs')">my skills</a>
-                </div>
+                </div> -->
                 <div>
                     <a id="linkCnt" onclick="scrollSmoothTo('contactme')">contact me</a>
                 </div>
@@ -348,7 +370,7 @@
 
 
 <!-- modais -->
-<div class="modal modal-xl fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<!-- <div class="modal modal-xl fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
   
       <video src="assets/videos/ExUnity.mp4" class=" img-fluid under" autoplay loop></video>
@@ -363,7 +385,7 @@
       </div>
       
     </div>
-  </div>
+  </div> -->
 
          
          <script src="assets/js/mainFile.js"></script>

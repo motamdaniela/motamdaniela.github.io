@@ -111,9 +111,27 @@ a:hover{
     font-size: 5vw;
 }
 
+.txtRightAlign{
+    text-align: end;
+}
+
+
+.alignDown{
+    align-items: end;
+    margin: 0px;
+}
+.alignedUp{
+    align-items: start;
+}
+
 hr{
     border: 1px solid #121113;
     /* width: 98.5vw; */
+}
+
+.menu{
+    margin-top: 5%;
+
 }
 
 /* ------------------------------- COVER */
@@ -248,7 +266,7 @@ hr{
     height: 100vh;
 }
 
-/* --- for the navbar*/
+/* ---............................... for the navbar*/
 
 @keyframes close {
     0% {
@@ -274,13 +292,21 @@ hr{
     transform: rotate(0deg);
     transition: .4s ease-out;
 }
+#navBackBtn{
+    width: 1.8rem;
+    position: relative;
+    bottom: 0vh;
+    left: 10vh;
+    transform: rotate(0deg);
+    transition: .4s ease-out;
+}
 
 .difference{
     mix-blend-mode:difference;
 
 }
 
-#navBtn:hover{
+#navBtn:hover, #navBackBtn:hover{
     transform: rotate(90deg);
     transition: .4s ease-out;
 }
@@ -303,7 +329,7 @@ hr{
 .navLinks{
     position:relative;
     display:flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     text-align: center;
     /*! jdkhed */
     transition: .4s ease-out;
@@ -326,13 +352,17 @@ a.navLinks :hover{
     font-style: italic;
     transition-delay: -3s;
 }
-.navLinks a:hover:before{
+/* .navLinks a:hover:before{
+    font-style: italic;
+    content: "> ";
+} */
+.interactLinks a:hover:before{
     font-style: italic;
     content: "> ";
 }
 
 
-/* ---- for pages*/
+/* --------------------------------- for pages*/
 
 .pageTitle{
     margin-top: -10px;
@@ -387,16 +417,24 @@ a.navLinks :hover{
 .pageSection{
     position: relative;
     background-color: #F0F0EB;
-    width: 100vw;
-    height: 100vh;
     margin-bottom: -10px;
     transform: .3s ease;
     
     background-image: url("/assets/img/rectTest.png");
     background-size: 100%;
+    
+    width: 100vw;
+    height: 100vh;
+
+    /* display: flex; */
 }
+
 .pagebody{
     padding: 10px 20px 10px 20px;
+    /* display: flex;
+    align-items: center; */
+    /* flex-direction: column; */
+    /* justify-content: flex-end; */
 }
 
 .scrollPage{
@@ -471,19 +509,6 @@ a.navLinks :hover{
     width: 20%;
 }
 
-.txtRightAlign{
-    text-align: end;
-}
-
-
-.alignDown{
-    align-items: end;
-    margin: 0px;
-}
-.alignedUp{
-    align-items: start;
-}
-
 #projectDesc{
     margin: 0px;
     text-align: end;
@@ -539,7 +564,42 @@ a.navLinks :hover{
     }
 }
 
+/* -------------------------------------- about me */
+#lastName, #firstName {
+    margin-top: -70px;
+    margin-left: -40px;
+    position: relative;
+}
+#lastName{
+    margin-top: -120px;
+    margin-left: 5px;
+}
 
+.smallTxt, .mediumTxt, .bigTxt, .biggerTxt{
+    /* margin-top: -30%; */
+}
+
+.smallTxt{
+    font-size: 1.5vw;
+    margin-top: -10px;
+}
+.middleTxt{
+    font-size: 3vw;
+    margin-top: -20px;
+}
+
+.bigTxt{
+    font-size: 5vw;
+    margin-top: -30px;
+}
+.biggerTxt{
+    font-size: 7vw;
+    margin-top: -40px;
+}
+.giantTxt{
+    font-size: 9vw;
+    margin-top: -50px;
+}
 
 
 /*! PENULTIMA SECCAO */
@@ -547,6 +607,8 @@ a.navLinks :hover{
     display: none;
 }
 
+
+/* --------------------------------------- screens */
 @media (max-width: 850px) {
     body{
         font-size: 15px;
