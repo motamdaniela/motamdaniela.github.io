@@ -620,3 +620,12 @@ a.navLinks :hover{
         height: 50vh; */
     }
 }
+
+.menu{
+    /* left: 691px; */
+    position: fixed;
+    top: -100px;
+    width: 100vw;
+    height: 105vh;
+    background-color: #F0F0EB;
+}

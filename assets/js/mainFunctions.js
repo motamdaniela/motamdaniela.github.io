@@ -6,6 +6,7 @@ let crclCursor = document.querySelector('.cursor__circle');
 let opts = document.querySelectorAll('.coverOpt');
 let blurcontent = document.querySelectorAll('.blurover');
 
+let menu = document.querySelector('.menu');
 
 window.addEventListener('mousemove', function(e){
     // for the cursor
@@ -41,3 +42,12 @@ opts.forEach((opt) => {
         // document.querySelector('.coverImg').src = '/assets/img/portfolio/eco-meow2.png';
     });
 });
+
+function OpenMenu(){
+    if(menu.classList.contains('invisible')){
+        menu.classList.remove('invisible');
+    }
+    else{
+        menu.classList.add('invisible');
+    }
+}
