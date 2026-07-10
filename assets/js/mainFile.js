@@ -1,3 +1,5 @@
+// specific functions
+
 // let crclCursor = document.querySelector('.cursor__circle');
 let workImg = document.querySelector('#showingImg');
 let img = document.querySelector('.coverImg');
@@ -24,7 +26,7 @@ let scrollListener = 0;
 window.addEventListener('scroll', ScrollAnims)
 window.addEventListener('resize', ScrollAnims)
 
-//for the school animations
+//for the scroll animations
 function ScrollAnims(){
     const htmlElement = document.documentElement
      const percentScroll = htmlElement.scrollTop / htmlElement.clientHeight
@@ -41,7 +43,7 @@ function ScrollAnims(){
 
      hmoves2.forEach(hmove => {
         // const curPos = hmove.style.left;
-             hmove.style.right = (percentScroll -4)*30+"%"
+             hmove.style.right = (percentScroll -4.3)*30+"%"
      });
 
      
@@ -70,7 +72,7 @@ function ScrollAnims(){
 
     }
 
-    // para o botao aparecer
+    // para o botao do menu aparecer
     if (window.scrollY > 100) {
         navLinks.style.animation = 'close 0.3s ease-in both';
         navLinks.style.animationDirection = 'normal';

@@ -1,3 +1,5 @@
+// for the overall main functions that are common in the entire document
+
 let crclCursor = document.querySelector('.cursor__circle');
 
 // let img = document.querySelector('.coverImg');
@@ -46,8 +48,12 @@ opts.forEach((opt) => {
 function OpenMenu(){
     if(menu.classList.contains('invisible')){
         menu.classList.remove('invisible');
+        menu.style.display = 'flex';
+        document.documentElement.style.overflow = 'hidden';
     }
     else{
         menu.classList.add('invisible');
+        menu.style.display = 'none';
+        document.documentElement.style.overflow = 'visible';
     }
 }
