@@ -1,612 +1,662 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" />
+    <title>my portfolio.</title>
+    <link href="assets/img/Vector.svg" rel="icon">
 
-  <title>Daniela Monteiro</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <link href="assets/css/styleSheet.css" rel="stylesheet">
+    <link href="assets/css/styleSheetPhone.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/n27" rel="stylesheet">
 
-  <!-- Favicons -->
-  <link href="assets/img/Vector.svg" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700,700i|Playfair+Display:400,400i,500,500i,600,600i,700,700i,900,900i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Folio
-  * Updated: Mar 10 2023 with Bootstrap v5.2.3
-  * Template URL: https://bootstrapmade.com/folio-bootstrap-portfolio-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center justify-content-between">
-
-      <div></div>
-      <!-- <a href="index.html" class="logo"><img src="assets/img/Vector.svg" alt="" id="logo"></a> -->
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About me</a></li>
-          <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
-          <li><a class="nav-link scrollto" href="#contact">My info</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="home">
-
-    <div id="bg-overlay">
-
-      <div class="container">
-        <div class="hero-content">
-          <h1>I'm <span class="typed" data-typed-items="Daniela Monteiro, curious, bold, a Web Developer, a Web Designer, a Game Developer, always learning!"></span></h1>
-          <p>Web Designer • Web Developer • Game Developer</p>
-  
-          <ul class="list-unstyled list-social headli">
-            <!-- <li><a target="_blank" href="https://www.instagram.com/motamdaniela"><i class="bi bi-instagram iconSocial"></i></a></li> -->
-            <li><a target="_blank" href="mailto:mota.mdaniela@gmail.com"><i class="bi bi-envelope-fill iconSocial"></i></a></li>
-            <li><a target="_blank" href="https://www.linkedin.com/in/motamdaniela/"><i class="bi bi-linkedin iconSocial"></i></a></li>
-            <li><a target="_blank" href="https://github.com/motamdaniela"><i class="bi bi-github iconSocial"></i></a></li>
-          </ul>
+        <div id="mainImg">
         </div>
-      </div>
+        <img  alt="" class="coverImg">
+        <img src="assets/img/texture.svg" alt="" class="filter blurover">
 
-    </div>
-  </div><!-- End Hero -->
+        <div class="coverContent">
+            <div id="infoContent" class="blurover">
+                    <p class="bodyTxt">daniela monteiro.</p>
+                    <p class="bodyTxt">web developer & designer.</p>
+                    <p class="bodyTxt">game developer.</p>
+                    <p class="bodyTxt">porto, portugal.</p>
+                </div>
+                <hr id="hlInfo" class="blurover"/>
+                <div class="coverInfo blurover">
+                    <p id="Title">my <span class="italic">p</span><span class="cyrene">o</span>rtfolio.</p>
+                </div>
+                <div>
+                    <!-- <div class="coverOptions">
+                        <div class="optdiv">
+                            <a onclick="scrollSmoothTo('mywork')" class="interactable">
+                            <span class="coverOpt titleTxt italic" id="optfront">front-<span class="cyrene">e</span>nd</span>
+                            </a>
+                        </div>
+                        <div class="optdiv" id="divWeb">
+                            <a onclick="scrollSmoothTo('mywork')" class="interactable">
+                            <span class="coverOpt titleTxt italic" id="optweb">web de<span class="cyrene">s</span>ign</span>
+                            </a>
+                        </div>
+                        <div class="optdiv">
+                            <a href="#mywork" onclick="scrollSmoothTo('mywork')" class="interactable">
+                            <span class="coverOpt titleTxt italic" id="optdig">digital <span class="cyrene">b</span>randing</span>
+                            </a>
+                        </div>
+                        <div class="optdiv">
+                            <a href="#mywork" onclick="scrollSmoothTo('mywork')" class="interactable">
+                            <span class="coverOpt titleTxt italic" id="optint"><span class="green">&</span> in<span class="cyrene">t</span>eractivity.</span>
+                            </a>
+                        </div>
+                    </div> -->
+                    <div class="coverOptions">
+                        <div class="optdiv">
+                            <a onclick="scrollSmoothTo('mywork')" class="interactable">
+                            <span class="coverOpt titleTxt italic" id="optfront">full-<span class="cyrene">s</span>tack</span>
+                            </a>
+                        </div>
+                        <div class="optdiv" id="divWeb">
+                            <a onclick="scrollSmoothTo('mywork')" class="interactable">
+                                <span class="coverOpt titleTxt italic" id="optdig">engi<span class="cyrene">n</span>eering</span>
+                            </a>
+                        </div>
+                        <div class="optdiv">
+                            <a href="#mywork" onclick="scrollSmoothTo('mywork')" class="interactable">
+                                <!-- <span class="coverOpt titleTxt italic" id="optdig">digital <span class="cyrene">b</span>randing</span> -->
+                                <span class="coverOpt titleTxt italic" id="optweb">web te<span class="cyrene">c</span>hnologies</span>
+                            </a>
+                        </div>
+                        <div class="optdiv">
+                            <a href="#mywork" onclick="scrollSmoothTo('mywork')" class="interactable">
+                            <span class="coverOpt titleTxt italic" id="optint"><span class="green">&</span> in<span class="cyrene">t</span>eractivity.</span>
+                            </a>
+                        </div>
+                    </div>
 
-  <main id="main">
 
-    <!-- ======= About Section ======= -->
-    <div id="about" class="paddsection">
-      <div class="container">
-        <div class="row justify-content-between">
 
-          <div class="col-lg-3 ">
-            <div class="div-img-bg">
 
-                <div class="about-img">
-                  <img src="assets/img/me.jpg" class="img-responsive" alt="me">
                 </div>
             </div>
-          </div>
 
-          <div class="col-lg-8">
-            <h2>ABOUT ME</h2>
-            <div class="about-descr">
 
-              <p class="separator">
-                Hi! My name is Daniela Monteiro and I'm currently teaching about various topics related to videogame development at ESMAD.
-              </p>
-              <p>During my studies, I've learned a lot that has helped me understand the innerworkings of the web, the back-end, the front-end and the whole process of making a website come to life, from concept to reality! And by the end of my academic route, I've developed a lot of resourcefulness and have become notably better at public speaking.
-                Although I am a teacher, i have not stopped learning, especially when it comes to videogames, history and, mostly, programming! I constantly strive to improve myself and that also includes my code! I love to challange myself with my own past projects, always searching for an improvement.
-              </p>
-                <!-- Apart from all web related things, I've also come to learn a lot about many other curious topics and aquired some interesting skills, such as 3d modeling and gamification. -->
-              <!-- <p>Check out my work below!</p> -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End About Section -->
-
-    <!-- ======= Services Section ======= -->
-    <div id="services">
-
-      <div class="container">
-        <h3>MY SKILLS</h3>
-        <br/>
-
-        <div class="services-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-code-slash"></i>
-                <span>html, css, bootstrap, vue</span>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-braces"></i>
-                <span>javascript, python, c#, c++, kotlin</span>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-bounding-box-circles"></i>
-                <span>Figma, illustrator, photoshop</span>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-badge-3d"></i>
-                <span>Blender, maya, unity</span>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-box"></i>
-                <span>a-frame, webgl, threejs</span>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="services-block">
-                <i class="bi bi-camera-video"></i>
-                <span>After effects</span>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-
-    </div><!-- End Services Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <div id="portfolio" class="paddsection">
-
-      <div class="container">
-        <div class="section-title text-center">
-          <h2>My Portfolio</h2>
-          <p>Check out the demonstrational videos for each project by clicking on them!</p>
-        </div>
-      </div>
-
-      <div class="container">
-
-        <div class="row">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-web">Web Apps</li>
-              <li data-filter=".filter-games">Games</li>
-              <li data-filter=".filter-oth">Others</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row portfolio-container">
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
-            <img src="assets/img/portfolio/exUnity.png" class="img-fluid portfolio-img" alt=""  data-bs-toggle="modal" data-bs-target="#unityexModal">
-            <div class="portfolio-info">
-              <h4>mini-games</h4>
-              <p>A collection of mini-games developed with Unity</p>
-              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#unityexModal"></i>
-                <a href="https://ipppt-my.sharepoint.com/personal/40210288_esmad_ipp_pt/_layouts/15/onedrive.aspx?view=0&id=%2Fpersonal%2F40210288%5Fesmad%5Fipp%5Fpt%2FDocuments%2FExercicios%5FUnity"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/evergreen.png" class="img-fluid portfolio-img" alt=""  data-bs-toggle="modal" data-bs-target="#evergreenModal">
-            <div class="portfolio-info">
-              <h4>Evergreen</h4>
-              <p>A web platform with an award winning design!</p>
-              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#evergreenModal"></i>
-                <a href="https://github.com/motadaniela/Evergreen"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
+            <div class="cover">
             </div>
 
-          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
-            <img src="assets/img/portfolio/eco-meow.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#ecomeowModal">
-            <div class="portfolio-info">
-              <h4>Eco-Meow</h4>
-              <p>A game made with canvas.</p>
-              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#ecomeowModal"></i>
-                <a href="https://github.com/motadaniela/Eco-Meow"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
-            <img src="assets/img/portfolio/eco-meow2.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#ecomeow2Modal">
-            <div class="portfolio-info">
-              <h4>Eco-Meow 2.0</h4>
-              <p>A game made with three.js based off the previous game, Eco-Meow.</p>
-              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#ecomeow2Modal"></i>
-              <a href="https://github.com/motadaniela/Eco-Meow/tree/main/Eco-Meow2.0"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <img src="assets/img/portfolio/tw.png" class="img-fluid portfolio-img" alt=""  data-bs-toggle="modal" data-bs-target="#exampleModal">
-            <div class="portfolio-info">
-              <h4>Training Wheels</h4>
-              <p>An app to aid in driving students.</p>
-              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#exampleModal"></i>
-              <a href="https://github.com/motadaniela/Training-Wheels" target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-oth">
-            <img src="assets/img/portfolio/video.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#videoModal">
-            <div class="portfolio-info">
-              <h4>Animation for Training Wheels</h4>
-              <p>An animation to promote our platform.</p>
-              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#videoModal"></i>
-              <a href="https://drive.google.com/file/d/1usQCuDdFCH2mXSPaHnjMLQArGqeUDtk6/view?usp=sharing"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-games">
-            <img src="assets/img/portfolio/aframe.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#aframeModal">
-            <div class="portfolio-info">
-              <h4>3d exercise with a-frame</h4>
-              <p>A traffic exercise designed for vr.</p>
-              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#aframeModal"></i>
-              <a href="https://github.com/motadaniela/Training-Wheels/blob/main/cpm"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-oth">
-            <img src="assets/img/portfolio/posters.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#postersModal">
-            <div class="portfolio-info">
-              <h4>Posters</h4>
-              <p>A couple of posters advertising both our web platforms.</p>
-              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#postersModal"></i>
-              <a href="https://drive.google.com/drive/folders/1v9T5pCnoXthviNJMpoQ6eKwaDPsYcaDj?usp=sharing"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-oth">
-            <img src="assets/img/portfolio/illustrations.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#illustrationsModal">
-            <div class="portfolio-info">
-              <h4>Illustrations</h4>
-              <p>A couple of Illustrations made in Adobe Illustrator.</p>
-              <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#illustrationsModal"></i>
-                <a href="https://drive.google.com/drive/folders/1DrCRPbDWtsh_RgcpINQ3d-CKAmYaGZhg?usp=sharing"  target="_blank" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-            
-            <!-- <div class="col-lg-4 col-md-6 portfolio-item filter-oth">
-              <img src="assets/img/portfolio/donut.png" class="img-fluid portfolio-img" alt="" data-bs-toggle="modal" data-bs-target="#donutModal">
-              <div class="portfolio-info">
-                <h4>Donut made in blender</h4>
-                <p>A work in progress.</p>
-                <a class="preview-link"><i class="bx bx-plus" data-bs-toggle="modal" data-bs-target="#donutModal"></i>
-              </div>
-            </div> -->
-
-        </div>
-
-      </div>
-
-    </div><!-- End Portfolio Section -->
-
-    <!-- ======= Contact Section ======= -->
-    <div id="contact" class="paddsection">
-      <div class="container">
-        <div class="contact-block1">
-          
-            <div class="hstack gap-3 myinfo-container">
-              <div class="col-lg-6 col-md-2">
-                <div class="contact-contact contact-col section-title">
-  
-                  <h2 class="mb-30 infotitle">My Information</h2>
-  
+<!-- ----------------------   my work -->
+        <div class="pageSection scrollPage" id="mywork">
+            <hr />
+                <div class="titleDiv">
+                    <p class="phonehmove titleTxt">my work <span class="green">↘</span></p>
+                    <p class="hmove">
+                       <span class="pageTitle" id="semiTitleTxt">my work <span class="green">&nbsp;↘</span>
+                        my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span>
+                        my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span>
+                        my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span>
+                        my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span>
+                        </span>
+                    </p>
+                    <!-- <p class="hmove hmove2">
+                       <span class="pageTitle" id="semiTitleTxt">  my work <span class="green">↘</span>
+                        my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span> my work <span class="green">↘</span>
+                        </span>
+                    </p>  -->
                 </div>
-              </div>
+            <hr />
 
-              <div class="col-lg-6 col-md-2 contact-col mycontact">
 
-                <div class="">
-                  <ul class="contact-labels">
-                    <!-- <li><span>My name</span></li> -->
-                    <li><span>My email</span></li>
-                    <li><span>My linkedIn</span></li>
-                    <li><span>My github</span></li>
-                    <li><span>My CV</span></li>
-                  </ul>
-                </div>
-  
-                <div class="vr"></div>
-  
-                <div class="">
-                  <ul class="contact-details">
-                    <!-- <li><span>Daniela Monteiro</span></li> -->
-                    <li><a target="_blank" href="mailto:mota.mdaniela@gmail.com"><span>mota.mdaniela@gmail.com</span></a></li>
-                    <li><a target="_blank" href="https://www.linkedin.com/in/motamdaniela/"><span>@motamdaniela</span></a></li>
-                    <li><a target="_blank" href="https://github.com/motamdaniela"><span>@motamdaniela</span></a></li>
-                    <li><a target="_blank" href="/CV_Europass.pdf" download><span>download</span></a></li>
-                  </ul>
-                </div>
-              </div>
+            <!-- -- content -->
+            <div class="pagebody">
 
+                <div class="collectionWorks">
+
+                    <a href="mywork.html?project=cortex-labs">
+                        <div class="works interactable" onmouseover="OnHoverShowImg('cortex-labs')" onmouseleave="OnHoverHideImg()">
+                            <h3 class="titleTxt workTitle">Cortex Labs</h3>
+                            <p class="worksDesc txtRightAlign">A team focused on organizational improvement. With a project was in partnership with INOVA+.</p>
+                        </div>
+                    </a>
+                        <hr />
+
+                    <a href="mywork.html?project=task-up">
+                        <div class="works interactable" onmouseover="OnHoverShowImg('task-up')" onmouseleave="OnHoverHideImg()">
+                            <h3 class="titleTxt workTitle">TaskUp</h3>
+                            <p class="worksDesc txtRightAlign">A web app designed to help improve team-work. A school project made with next.js.</p>
+                        </div>
+                    </a>
+                        <hr />
+
+                    <!-- <a href="mywork.html?project=home-maestro">
+                        <div class="works interactable" onmouseover="OnHoverShowImg('donut')" onmouseleave="OnHoverHideImg()">
+                            <h3 class="titleTxt workTitle">Games for Classes</h3>
+                            <p class="worksDesc txtRightAlign">A collection of mini games designed to be tuttored in classes.</p>
+                        </div>
+                    </a>
+                        <hr /> -->
+
+                    <!-- <a href="mywork.html?project=classes">
+                        <div class="works interactable" onmouseover="OnHoverShowImg('donut')" onmouseleave="OnHoverHideImg()">
+                            <h3 class="titleTxt workTitle">Games for Classes</h3>
+                            <p class="worksDesc txtRightAlign">A collection of mini games designed to be tuttored in classes.</p>
+                        </div>
+                    </a>
+                        <hr /> -->
+
+                    <!-- <a href="/mywork.html?project=workshop">
+                        <div class="works" onmouseover="OnHoverShowImg('donut')" onmouseleave="OnHoverHideImg()">
+                            <h3 class="titleTxt workTitle">WORKSHOP MONICA SANTOS</h3>
+                            <p class="worksDesc txtRightAlign">A 2d pixel game made with WebGL</p>
+                        </div>
+                    </a>
+                        <hr /> -->
+
+                        <a href="mywork.html?project=kendir">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('kendir')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle">Educational Games for Kendir</h3>
+                                <p class="worksDesc txtRightAlign">A collection of 2d pixel games made with Unity, for an intership.</p>
+                            </div>
+                        </a>
+                        <hr />
+
+                        <a href="mywork.html?project=mini-games">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('mini-games')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle">Collection of Mini Games</h3>
+                                <p class="worksDesc txtRightAlign">A few mini-games made with Unity, designed to explore all facets of the tool's capabilities.</p>
+                            </div>
+                        </a>
+                        <hr />
+
+                        <!-- <a href="mywork.html?project=videos">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('video')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle">Animation Video Clips</h3>
+                                <p class="worksDesc txtRightAlign">A 2d pixel game made with WebGL</p>
+                            </div>
+                        </a>
+                        <hr /> -->
+
+                        <a href="mywork.html?project=evergreen">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('evergreen')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle" onclick="OnHoverShowImg">Evergreen</h3>
+                                <p class="worksDesc txtRightAlign">A web page made with Vue.js. With an award winning gamification-centered design.</p>
+                            </div>
+                        </a>
+                        <hr />
+
+                        <a href="mywork.html?project=eco-meow2">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('eco-meow2')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle">Eco-Meow 2.0</h3>
+                                <p class="worksDesc txtRightAlign">A 3D mini-game made for the web, designed and developed fully with Three.js.</p>
+                            </div>
+                        </a>
+                        <hr />
+
+                        <a href="mywork.html?project=eco-meow">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('eco-meow')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle">Eco-Meow</h3>
+                                <p class="worksDesc txtRightAlign">A 2d pixel game made with WebGL. Made with the intent of exploring the tool and get creative.</p>
+                            </div>
+                        </a>
+                        <hr />
+
+                        <!-- <a href="mywork.html?project=anda">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('anda')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle">Anda Redesign</h3>
+                                <p class="worksDesc txtRightAlign">Redesign of the app.</p>
+                            </div>
+                        </a>
+                        <hr />-->
+
+                        <a href="mywork.html?project=cinema-trindade">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('cinema-trindade')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle">Cinema Trindade Redesign</h3>
+                                <p class="worksDesc txtRightAlign">A user-centered redesign of the website for a UI/UX project, developed through user research.</p>
+                            </div>
+                        </a>
+                        <hr />
+
+                        <a href="mywork.html?project=tw">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('tw')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle">Training Wheels</h3>
+                                <p class="worksDesc txtRightAlign">A web page dedicated to tutorials, with a gamification-centered design</p>
+                            </div>
+                        </a>
+                        <hr />
+
+                        <a href="mywork.html?project=a-frame">
+                            <div class="works interactable" onmouseover="OnHoverShowImg('aframe')" onmouseleave="OnHoverHideImg()">
+                                <h3 class="titleTxt workTitle">VR Mini-Game</h3>
+                                <p class="worksDesc txtRightAlign">A small Virtual Reatily project, developed with the framework a-frame.</p>
+                            </div>
+                        </a>
+
+
+                    </div>
 
             </div>
-            
         </div>
-      </div>
-    </div><!-- End Contact Section -->
-    
 
-    <div>
-      <p style="text-align: center; color: #b8a07e">Thank you for checking out my work!</p>
-    </div>
-    <div id="quote">
-      <h3>"The only impossible journey is the one you never begin."</h3>
-      <p>- Tony Robbins</p>
-    </div>
-    
+<!-- ----------------------   about me -->
+        <div class="pageSection" id="abtme">
+            <hr />
+            <div class="titleDiv">
+                <p class="phonehmove titleTxt">about me <span class="green">↘</span></p>
+                    <p class="hmove2">
+                       <span class="pageTitle" id="semiTitleTxt">about me <span class="green">↘</span>
+                        about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span>
+                        about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span>
+                        about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span>
+                        about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span>
+                        </span>
+                    </p>
+                    <!-- <p class="hmove hmove2">
+                       <span class="pageTitle" id="semiTitleTxt">  about me <span class="green">↘</span>
+                        about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘</span> about me <span class="green">↘ &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                        </span>
+                    </p>  -->
+                </div>
+                <hr />
+    <!-- -- content -->
+            <div class="pagebody rowJustified abtmeContent">
+                <div class="displayImg abtmeDisplay">
+                        <!-- <img src="./assets/img/home-bg.jpg" alt="" class="thumbnail" > -->
+                        <!-- <img src="./assets/img/me_3.png" alt="" class="thumbnail" > -->
+                        <img src="./assets/img/me_2.jpg" alt="" class="thumbnail" >
 
-  </main><!-- End #main -->
+                        <div class="phoneabtmeHead">
+                            <div class="rowJustified abtmeHead">
+                                <!-- <p>I'm a software engineer,</p>
+                                <p>full-stack developer,</p>
+                                <p>game developer,</p>
+                                <p>and a teacher.</p> -->
+                                <!-- Software Engineer | Game Dev Educator | Web Architect -->
+                                 <p>Hi! I'm</p>
+                            </div>
+                            <hr class=""/>
+                            <div class="abtmeHead">
+                                <!-- <p>I specialize in</p>
+                                <p>web technologies,</p>
+                                <p>bridging code</p>
+                                <p>and creativity.</p> -->
+                                <p>I'm a software engineer, full-stack developer,</p>
+                                <p class="abtmeHead">game developer and a teacher.</p>
+                            </div>
+                        </div>
+                    
+                    <p id="firstName" class="superTxt italic">D<span class="cyrene">a</span>niela</p>
+                    <p id="lastName" class="superTxt italic green">Mont<span class="cyrene">e</span>iro.</p>
 
-
-  <!-- ======= Footer ======= -->
-  <div id="footer" class="text-center">
-    <div class="container">
-      <div class="socials-media text-center">
-
-        <!-- <ul class="list-unstyled">
-          <li><a target="_blank" href="https://github.com/motadaniela"><i class="bi bi-github"></i></a></li>
-          <li><a target="_blank" href="https://www.behance.net/danielamonteiro17"><i class="bi bi-behance"></i></a></li>
-          <li><a target="_blank" href="https://www.linkedin.com/in/daniela-monteiro-442629270/"><i class="bi bi-linkedin"></i></a></li>
-        </ul> -->
-
-      </div>
-
-      <p>&copy; Copyrights Folio. All rights reserved.</p>
-
-      <div class="credits">
-        Designed by <a target="_blank" href="https://bootstrapmade.com/">BootstrapMade</a>
-      </div>
-
-    </div>
-  </div><!-- End Footer -->
-
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-<!-- unity Ex Modal -->
-<div class="modal modal-xl fade" id="unityexModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-
-    <video src="assets/videos/ExUnity.mp4" class=" img-fluid under" autoplay loop></video>
-    
-    <div class="modal-content video-content">
-      <div class="modal-body">
-          <p>A collection of 3 mini games developed in Unity meant to explore various aspects of game development, from the cenerious and ambients, to the development of the code itself.</p>
-          <p>As these served as a more in depth introduction to c# and many of the various features Unity has to offer.</p>
-          <p></p>
-          <a class="card-link"  target="_blank" href="https://ipppt-my.sharepoint.com/personal/40210288_esmad_ipp_pt/_layouts/15/onedrive.aspx?view=0&id=%2Fpersonal%2F40210288%5Fesmad%5Fipp%5Fpt%2FDocuments%2FExercicios%5FUnity"><b>Check them out!</b></a>
-      </div>
-    </div>
-    
-  </div>
-</div>
+                    <img src="assets/img/Vector.svg" alt="" class="abtmeVector">
+                </div>
 
 
-  <!-- posters Modal -->
-  <div class="modal modal-xl fade" id="postersModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-  
-      <img class="modal-cover img-fluid under postersimg"  src="assets/img/portfolio/posters.png">
-      
-      <div class="modal-content img-content">
-        <div class="modal-body">
-            <p>These two posters were designed in order to promote and/or explain our web platforms, Evergreen and Training Wheels.</p>
-            <p>We have taken aspects from the design of their respective application and gather them to create a cohesive and interesting poster.</p>
-            <p></p>
-            <a class="card-link"  target="_blank" href="https://drive.google.com/drive/folders/1v9T5pCnoXthviNJMpoQ6eKwaDPsYcaDj?usp=sharing"><b>Check them out in more detail</b></a>
+                <div class="txtRightAlign abtmeDesc">
+                    <p class="txtRightAlign italic smallTxt infoPhone">r<span class="cyrene">e</span>ad me <span class="green">↘</span></p>
+                    <div class="skillselection">
+                        <p class="">
+                            I design and build digital experiences that live at the intersection of the web, games, and software systems. With a Bachelor's in Web Technologies and a Master's in Software Engineering currently underway, I bring together front-end craftsmanship, back-end architecture, and real-time <span class="outlined">interactivity</span>. My work isn't just about making things work, it's about making them engaging, performant, and built to scale.
+                        </p>
+                        <!-- <hr /> -->
+                        <!-- <p>
+                            As a Game Dev educator and a student at the same time, this duality sets me appart and helps me stay sharp. I'm always searching for the "why" behind every line of logic. This teaching mindset permeates my development work, making me a clearer communicator, a better team player, and someone who thrives in collaborative, cross-disciplinary environments.
+                        </p> -->
+                        <!-- <hr /> -->
+                        <p>
+                            I'm currently deepening my expertise in software engineering, architecture, and development pipelines to build applications that are as robust as they are <span class="outlined">innovative</span>. Whether I'm crafting a web platform, optimizing a game engine, or architecting a backend service, I approach every project with the same curiosity and rigor. I'm always looking for challenges that push me to grow and create something truly <span class="outlined">memorable.</span>
+                        </p>
+                    </div>
+                    <!-- <div class="skillselection">
+                        <p class="smallTxt">vue</p>
+                        <p class="middleTxt">three.js</p>
+                        <p class="bigTxt">webGL</p>
+                        <p class="biggerTxt">bootstrap</p>
+                        <p class="giantTxt">a-frame</p>
+                    </div> -->
+                </div>
+
+            </div>
         </div>
-      </div>
-      
-    </div>
-  </div>
 
-<!-- evergreen Modal -->
-<div class="modal modal-xl fade" id="evergreenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<!-- ----------------------   my skills -->
+        <div class="pageSection" id="mysrvcs">
+                <hr />
+                <div class="titleDiv">
+                    <p class="phonehmove titleTxt">my skills <span class="green">↘</span></p>
+                    <p class="hmove">
+                       <span class="pageTitle" id="semiTitleTxt">my skills <span class="green">↘</span>
+                        my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span>
+                        my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span>
+                        my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span>
+                        my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span>
+                        </span>
+                    </p>
+                    <!-- <p class="hmove hmove2">
+                       <span class="pageTitle" id="semiTitleTxt">  my skills <span class="green">↘</span>
+                        my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘</span> my skills <span class="green">↘ &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;</span>
+                        </span>
+                    </p>  -->
+                </div>
+                <hr />
 
-    <video src="assets/videos/evergreen.mp4" class=" img-fluid under" autoplay loop></video>
-    
-    <div class="modal-content video-content">
-      <div class="modal-body">
-          <p>Evergreen is the name of lastest web platform me and my teamates have developed and it's meant to aid students to contribute in helping the environment while being apart of the project "Eco-Escolas".</p>
-          <p>This project was made with vue and it allows the user to participate in activities, register ocurrences, complete missions, collect points and badges and race to become the best contributor for a better planet!</p>
-          <p>Recently, last year, me and my team were nominated to participate in the 3rd edition of the <a href="https://eventos.esmad.ipp.pt/gamifyit/" target="_blank">Gamify it</a> contest and, to our surprise, our design won!</p>
-          <p>Me and my teammates worked hard in every stage of the making of this project, from the conceptualization to the design, all the way to the development of the front-end and even the back-end, including a REST API.</p>
-          <a class="card-link" href="https://motamdaniela.github.io/Evergreen/"  target="_blank" ><b>Check out our project</b></a> (You might need to run the backend server on your machine for full access!)
-          <br/>
-          <a class="card-link" href="https://www.figma.com/file/Ywjn7cvznFeKiS011dGjtV/Evergreen?t=oKZUF49vWjzSmSui-1"  target="_blank" ><b>Check out our design</b></a>
-          <br/>
-          <a class="card-link" href="https://github.com/motadaniela/Evergreen" target="_blank" ><b>Check out our code</b></a>
-          <br/>
-          <a class="card-link" href="https://drive.google.com/file/d/11BZaVfybEdBzha-uedgSCWMgIxmkJ9pQ/view?usp=drive_link" target="_blank" ><b>Check out the video in more detail</b></a>
-      </div>
+    <!-- -- content -->
+     <div class="pagebody skillsBody">
+
+        <p class="txtRightAlign italic smallTxt hoverInfo phoneInfo">ho<span class="cyrene">v</span>er over me <span class="green">↘</span></p>
+        
+         <div class="skillsContent">
+             
+    <div class="marquee-container bigTxt">
+        <div class="marquee-track">
+         <!-- First line: Right to Left -->
+            <div class="marquee-line left-to-right">
+                    <span>G<span class="italic">a</span><span class="cyrene">m</span>e Development</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>M<span class="italic">o</span><span class="cyrene">t</span>ion Design</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>3D <span class="italic">M</span><span class="cyrene">o</span>deling</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">G<span class="italic">a</span><span class="cyrene">m</span>ification</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>K<span class="italic">e</span><span class="cyrene">y</span>frame Animation</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>C<span class="italic">r</span><span class="cyrene">o</span>ss-Platform De<span class="italic">v</span><span class="cyrene">e</span>lopment</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span>I<span class="italic">n</span><span class="cyrene">p</span>ut Handling</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>2D/GUI G<span class="italic">a</span><span class="cyrene">m</span>e De<span class="italic">v</span><span class="cyrene">e</span>lopment</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">L<span class="italic">e</span><span class="cyrene">v</span>el Design</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span>P<span class="italic">i</span><span class="cyrene">x</span>el Art Ani<span class="italic">m</span><span class="cyrene">a</span>tion</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                <!-- Duplicate for seamless loop -->
+                 <div class="skillDuplicate">
+
+                     <span>G<span class="italic">a</span><span class="cyrene">m</span>e Development</span>
+                     <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>M<span class="italic">o</span><span class="cyrene">t</span>ion Design</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                <span>3D <span class="italic">M</span><span class="cyrene">o</span>deling</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">G<span class="italic">a</span><span class="cyrene">m</span>ification</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>K<span class="italic">e</span><span class="cyrene">y</span>frame Animation</span>
+                    <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>C<span class="italic">r</span><span class="cyrene">o</span>ss-Platform De<span class="italic">v</span><span class="cyrene">e</span>lopment</span>
+                    <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span>I<span class="italic">n</span><span class="cyrene">p</span>ut Handling</span>
+                    <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>2D/GUI G<span class="italic">a</span><span class="cyrene">m</span>e De<span class="italic">v</span><span class="cyrene">e</span>lopment</span>
+                    <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">L<span class="italic">e</span><span class="cyrene">v</span>el Design</span>
+                    <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span>P<span class="italic">i</span><span class="cyrene">x</span>el Art Ani<span class="italic">m</span><span class="cyrene">a</span>tion</span>
+                    <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                </div>
+            </div>
+             <!-- Second line: Left to Right -->
+             <div class="marquee-line right-to-left">
+                    <span>RES<span class="italic">T</span><span class="cyrene">f</span>ul API Des<span class="italic">i</span><span class="cyrene">g</span>n</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">Databa<span class="italic">s</span><span class="cyrene">e</span> Model<span class="italic">i</span><span class="cyrene">n</span>g</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Server-Si<span class="italic">d</span><span class="cyrene">e</span> Render<span class="italic">i</span><span class="cyrene">n</span>g</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Compone<span class="italic">n</span><span class="cyrene">t</span>-Drive<span class="italic">n</span> <span class="cyrene">D</span>evelopment</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">API Inte<span class="italic">g</span><span class="cyrene">r</span>ati<span class="italic">o</span><span class="cyrene">n</span></span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Respon<span class="italic">s</span><span class="cyrene">i</span>ve Web Des<span class="italic">i</span><span class="cyrene">g</span>n</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Progress<span class="italic">i</span><span class="cyrene">v</span>e Web Ap<span class="italic">p</span><span class="cyrene">s</span></span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">CI/CD Pipe<span class="italic">l</span><span class="cyrene">i</span>ne<span class="italic">s</span><span class="cyrene"></span></span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Full-Sta<span class="italic">c</span><span class="cyrene">k</span> Enginee<span class="italic">r</span><span class="cyrene">i</span>ng</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Cloud Deplo<span class="italic">y</span><span class="cyrene">m</span>ent</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                <!-- Duplicate for seamless loop -->
+        <div class="skillDuplicate">
+                    <span>RES<span class="italic">T</span><span class="cyrene">f</span>ul API Des<span class="italic">i</span><span class="cyrene">g</span>n</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">Databa<span class="italic">s</span><span class="cyrene">e</span> Model<span class="italic">i</span><span class="cyrene">n</span>g</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Server-Si<span class="italic">d</span><span class="cyrene">e</span> Render<span class="italic">i</span><span class="cyrene">n</span>g</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Compone<span class="italic">n</span><span class="cyrene">t</span>-Drive<span class="italic">n</span> <span class="cyrene">D</span>evelopment</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">API Inte<span class="italic">g</span><span class="cyrene">r</span>ati<span class="italic">o</span><span class="cyrene">n</span></span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Respon<span class="italic">s</span><span class="cyrene">i</span>ve Web Des<span class="italic">i</span><span class="cyrene">g</span>n</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Progress<span class="italic">i</span><span class="cyrene">v</span>e Web Ap<span class="italic">p</span><span class="cyrene">s</span></span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">CI/CD Pipe<span class="italic">l</span><span class="cyrene">i</span>ne<span class="italic">s</span><span class="cyrene"></span></span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Full-Sta<span class="italic">c</span><span class="cyrene">k</span> Enginee<span class="italic">r</span><span class="cyrene">i</span>ng</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Cloud Deplo<span class="italic">y</span><span class="cyrene">m</span>ent</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+        </div> 
+            </div>
+
+             <!-- Third line: Right to Left -->
+             <div class="marquee-line left-to-right">
+                    <span>UI/UX Stra<span class="italic">t</span><span class="cyrene">e</span>gy</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">Visu<span class="italic">a</span><span class="cyrene">l</span> Iden<span class="italic">t</span><span class="cyrene">i</span>ty</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>User-Cent<span class="italic">e</span><span class="cyrene">r</span>ed Des<span class="italic">i</span><span class="cyrene">g</span>n</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">Pr<span class="italic">o</span><span class="cyrene">t</span>otyp<span class="italic">i</span><span class="cyrene">n</span>g</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                <span>Interact<span class="italic">i</span><span class="cyrene">o</span>n Des<span class="italic">i</span><span class="cyrene">g</span>n</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Projec<span class="italic">t</span><span class="cyrene"> M</span>anagem<span class="italic">e</span><span class="cyrene">n</span>t</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span>Front-end Devel<span class="italic">o</span><span class="cyrene">p</span>ment</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">User Rese<span class="italic">a</span><span class="cyrene">r</span>ch</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                <!-- Duplicate for seamless loop -->
+        <div class="skillDuplicate">
+                    <span>UI/UX Stra<span class="italic">t</span><span class="cyrene">e</span>gy</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">Visu<span class="italic">a</span><span class="cyrene">l</span> Iden<span class="italic">t</span><span class="cyrene">i</span>ty</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>User-Cent<span class="italic">e</span><span class="cyrene">r</span>ed Des<span class="italic">i</span><span class="cyrene">g</span>n</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">Pr<span class="italic">o</span><span class="cyrene">t</span>otyp<span class="italic">i</span><span class="cyrene">n</span>g</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Interact<span class="italic">i</span><span class="cyrene">o</span>n Des<span class="italic">i</span><span class="cyrene">g</span>n</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span>Projec<span class="italic">t</span><span class="cyrene"> M</span>anagem<span class="italic">e</span><span class="cyrene">n</span>t</span>
+                <img src="assets/img/Vector.svg" class="skillsVector greenVector" alt="" loading="lazy">
+                    <span>Front-end Devel<span class="italic">o</span><span class="cyrene">p</span>ment</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+                    <span class="outlinedSkill">User Rese<span class="italic">a</span><span class="cyrene">r</span>ch</span>
+                <img src="assets/img/Vector.svg" class="skillsVector" alt="" loading="lazy">
+        </div>
+             </div>
+        </div>
     </div>
-    
-  </div>
+
 </div>
 
-<!-- training wheels Modal -->
-<div class="modal modal-xl fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-
-      <video src="assets/videos/tw.mp4" class=" img-fluid under" autoplay loop></video>
-    
-    <div class="modal-content video-content">
-      <div class="modal-body">
-          <p>Training Wheels is a web platform designed for those who are just starting their driving journey and want to pass their exam!</p>
-          <p>A person can improve their knowledge with many tutorials, pop-up questions and even tests. The more a person progresses, the more rewards they will have to help them be on top of their game.</p>
-          <p>Alongside my team-mates, my role in the making of this project came in the designing, developing the front-end and making sense of the techniques to use in order to incentivize the young-adults in their first step to learn how to drive, since i was in a similar situation at the time!</p>
-          <a class="card-link" href="https://motamdaniela.github.io/Training-Wheels/TrainingWheels/html/" target="_blank" ><b>Check it out</b></a>
-          <br/>
-          <a class="card-link" href="https://www.figma.com/file/jtRxOiCPun4XkHLRycriPT/Untitled?t=UHIAboS0uCy0O4Jr-1"  target="_blank" ><b>Check out our design</b></a>
-          <br/>
-          <a class="card-link" href="https://github.com/motadaniela/Training-Wheels" target="_blank" ><b>Check out our code</b></a>
-          <br/>
-          <a class="card-link" href="https://drive.google.com/file/d/1LW5UANXgfcTlabsyY8eQWBt1MFPQOnYB/view?usp=drive_link" target="_blank" ><b>Check out the video in more detail</b></a>
-      </div>
     </div>
-    
-  </div>
-</div>
+        </div>
+
+<!-- ----------------------   contact me -->
+        <div class="pageSection" id="contactme">
+                <hr />
+                <div class="titleDiv">
+                    <p class="phonehmove titleTxt">contact me <span class="green">↘</span></p>
+                    <p class="hmove2">
+                       <span class="pageTitle" id="semiTitleTxt">contact me <span class="green">↘</span>
+                        contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span>
+                        contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span>
+                        contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span>
+                        contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span>
+                        contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span>
+                        contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span>
+                        contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span>
+                        contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span>
+                    </span>
+                    </p>
+                    <!-- <p class="hmove hmove2">
+                       <span class="pageTitle" id="semiTitleTxt">  contact me <span class="green">↘</span>
+                        contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘</span> contact me <span class="green">↘ &nbsp; &nbsp; &nbsp; &nbsp;</span>
+                        </span>
+                    </p>  -->
+                </div>
+                <hr />
+
+    <!-- -- content -->
+            <div class="pagebody">
+                
+                <!-- !!!!!1NOT SURE -->
+                <div class="rotator-div">
+                    <img src="assets/img/Vector_bg.png" alt="" class="background-rotator">
+                </div>
+
+                <div class="rowJustified contactContent">
+                    <div class="phonecontactHead">
+                        <div class="rowJustified">
+                            <p>like</p>
+                            <p>what</p>
+                            <p>you</p>
+                            <p>see?</p>
+                        </div>
+                        <hr class="abtmeHead"/>
+                        <!-- <p id="smallTitle">con<span class="italic">t</span><span class="cyrene">a</span>ct me.</p> -->
+                        <p id="smallTitle">con<span class="italic">t</span><span class="cyrene">a</span>ct me <span class="green">↘</span></p>
+
+                    </div>
+
+                    <div class="alignDown semiTxt socialsList">
+                        <!-- <hr />
+                        <a href="mailto: mota.mdaniela@gmail.com" target="_blank" class="semiTxt">email me.</a>
+                        <hr />
+                        <a href="https://github.com/motamdaniela" target="_blank" class="semiTxt">my github.</a>
+                        <hr />
+                        <a href="https://www.linkedin.com/in/motamdaniela/" target="_blank" class="semiTxt">my linked in.</a> -->
+
+                        <hr/>
+                        <a href="mailto:mota.mdaniela@gmail.com" target="_blank" class="contact-item rowJustified interactable">
+                            <span class="contact-number">01.</span> <span>my email.</span>
+                        </a>
+                        <hr/>
+                        <a href="https://www.linkedin.com/in/motamdaniela/" target="_blank" class="contact-item rowJustified interactable">
+                            <span class="contact-number">02.</span> <span>my linked in.</span>
+                        </a>
+                        <hr/>
+                        <a href="https://github.com/motamdaniela" target="_blank" class="contact-item rowJustified interactable">
+                            <span class="contact-number">03.</span> <span>my github.</span>
+                        </a>
+                        <hr/>
+                        <!-- <a href="https://www.figma.com/@motamdaniela" target="_blank" class="contact-item rowJustified interactable">
+                            <span class="contact-number">03.</span> <span>my figma.</span>
+                        </a>
+                        <hr/> -->
+                        <!-- <a href="https://www.behance.net/motamdaniela" target="_blank" class="contact-item rowJustified interactable">
+                            <span class="contact-number">04.</span> <span>my behance.</span>
+                        </a>
+                        <hr/> -->
+                        <!-- <a href="https://www.instagram.com/motamdaniela/" target="_blank" class="contact-item rowJustified interactable">
+                            <span class="contact-number">05.</span> <span>my instagram.</span>
+                        </a>
+                        <hr/> -->
+                        <a  href="assets/CV_DanielaMonteiro.pdf" target="_blank" class="contact-item rowJustified interactable">
+                            <span class="contact-number">04.</span> <span>my cv.</span>
+                        </a>
+                        <hr/>
+                    </div>
+
+                </div>
+
+                <div class="BackToTop">
+                    <button class="giantTxt interactable" onclick="scrollToTop()"><p>↑</p></button>
+                </div>
+                
+            </div>
+
+
+        </div>
 
 
 
-<!-- a-frame Modal -->
-<div class="modal modal-xl fade" id="aframeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-
-    <video src="assets/videos/a-frame.mp4" class=" img-fluid under" autoplay loop ></video>
-    
-    <div class="modal-content video-content">
-      <div class="modal-body">
-          <p>This project's objective is to present the user with a traffic situation and help them understand how the vehicles should proceed, but in a fun way!</p>
-          <p>Aimed towards a vr experience, the user is presented with a situation in which 3 different vehicles are in an intersecting road and the user must pick which must cross first according to the traffic laws.</p>
-          <p>This exercise was made with a-frame and javascript and my role was mainly coding all the traffic situations and how the vehicles behave with each, although I aided in picking the assets.</p>
-          <a class="card-link" href="https://github.com/motadaniela/Training-Wheels/blob/main/cpm"  target="_blank" ><b>Check out our code</b></a>
-          <br/>
-          <a class="card-link" href="https://drive.google.com/file/d/1Ia1d5gsc5lCxl5iQJXQHnQfqh2XLp2zp/view?usp=drive_link" target="_blank" ><b>Check out the video in more detail</b></a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-
-<!-- eco-meow Modal -->
-<div class="modal modal-xl fade" id="ecomeowModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-
-    <video src="assets/videos/eco-meow.mp4" class=" img-fluid under" autoplay loop ></video>
-    
-    <div class="modal-content video-content">
-      <div class="modal-body">
-          <p>This game, created with WebGl, was made with the purpose of teaching children a little bit about recycling.</p>
-          <p>The player is able to pick between three characters and even has the oportunity to name it! Once it's thrown into the game this character will give the player hints as to what to do throughout the different steps of the game.</p>
-          <p>With webGl and javascript, me and my team were able to produce a very complete project, and my role in it was to map the game, code the character's mechanisms, implement the tree planting, hints, character picking and naming aspects, as well as implement sound effects, a conclusion for the game and some of the css animations.</p>
-          <a class="card-link" href="https://motamdaniela.github.io/Eco-Meow/Eco-Meow2.0/"  target="_blank" ><b>Try out the game!</b></a>
-          <br/>
-          <a class="card-link" href="https://github.com/motadaniela/Eco-Meow"  target="_blank" ><b>Check out our code</b></a>
-          <br/>
-          <a class="card-link" href="https://drive.google.com/file/d/1ZgDfQHfGa3XpC54wll_SYE30e2kSd1oZ/view?usp=drive_link" target="_blank" ><b>Check out the video in more detail</b></a>
-      </div>
-    </div>
-    
-  </div>
-</div>
+<!--* menuuuu -->
+        <div class="menu padded invisible" id="">
+            <div class="menuOptions">
+                <div class="optdiv">
+                    <a href="new.html#mywork" onclick="OpenMenu()" class="menuLink interactable">
+                        <span class="coverOpt giantTxt">01. my <span class="italic">w</span><span class="cyrene">o</span>rk.</span>
+                    </a>
+                </div>
+                <hr />
+                <div class="optdiv">
+                    <a href="#abtme"onclick="OpenMenu()" class="menuLink interactable">
+                        <span class="coverOpt giantTxt">02. about <span class="italic">m</span><span class="cyrene">e</span>.</span>
+                    </a>
+                </div>
+                <hr />
+                <div class="optdiv">
+                    <a href="#mysrvcs"onclick="OpenMenu()" class="menuLink interactable">
+                        <span class="coverOpt giantTxt">03. my <span class="italic">s</span><span class="cyrene">k</span>ills.</span>
+                    </a>
+                </div>
+                <hr />
+                <div class="optdiv">
+                    <a href="#contactme"onclick="OpenMenu()" class="menuLink interactable">
+                        <span class="coverOpt giantTxt">04. cont<span class="italic">a</span><span class="cyrene">c</span>t me.</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- -------------------- -->
 
 
-<!-- eco-meow 2.0 Modal -->
-<div class="modal modal-xl fade" id="ecomeow2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <!-- * navbar -->
+        <div id="navbar" class="blurover ">
 
-    <video src="assets/videos/eco-meow2.mp4" class=" img-fluid under" autoplay loop ></video>
-    
-    <div class="modal-content video-content">
-      <div class="modal-body">
-          <p>This mini game made with three.js was based off the game created previously, Eco-Meow, in it's concept and design.</p>
-          <p>The purpose of this game was to build off of the first one, but in a 3d setting. In this version of the game, the player experiences the first and last aspects of the previous, the character picking, being able to control all 3, and planting trees!</p>
-          <p>I was responsible for creating and maping the cenario and all it's objects, as well as it's animations, building the black cat character that is in the middle, it's animations and interactions.</p>
-          <a class="card-link" href="https://motamdaniela.github.io/Eco-Meow/"  target="_blank" ><b>Try out the game!</b></a>
-          <br/>
-          <a class="card-link" href="https://github.com/motadaniela/Eco-Meow/tree/main/Eco-Meow2.0"  target="_blank" ><b>Check out our code</b></a>
-          <br/>
-          <a class="card-link" href="https://drive.google.com/file/d/1JJYTyxXw2rVxGTnjibLlQs_disz-ZtYJ/view?usp=drive_link" target="_blank" ><b>Check out the video in more detail</b></a>
-      </div>
-    </div>
-    
-  </div>
-</div>
+            <div class="">
+                <a onclick="OpenMenu()" class="interactable" title="menu">
+                    <img src="assets/img/Vectorr.svg" alt="" id="navBtn">
+                </a>
+            </div>
 
-<!-- video Modal -->
-<div class="modal modal-xl fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="navLinks interactLinks">
+                <div>
+                    <a id="linkWrk" class="interactable" onclick="scrollSmoothTo('mywork')"><span>my work</span></a>
+                </div>
+                <div>
+                    <a id="linkAbt" class="interactable" onclick="scrollSmoothTo('abtme')">about me</a>
+                </div>
+                <div>
+                    <a id="linkSrv" class="interactable" onclick="scrollSmoothTo('mysrvcs')">my skills</a>
+                </div>
+                <div>
+                    <a id="linkCnt" class="interactable" onclick="scrollSmoothTo('contactme')">contact me</a>
+                </div>
+            </div>
+        </div>
 
-    <video src="assets/videos/video.mp4" class=" img-fluid under" autoplay loop ></video>
-    
-    <div class="modal-content video-content">
-      <div class="modal-body">
-          <p>This small animation is meant to show-case our web platform and promote it's many functionalities that make it so unique.</p>
-          <p>We intended the tell a story with this video that hopefully many young adults would retale with in their journey on the road.</p>
-          <p>In the making of this video i animated all the objects and used the puppet animation method to create the illusion of movement on the characters. I'm the most proud of the final clip that gives life to the logo we created for the platform!</p>
-          <a class="card-link" href="https://drive.google.com/file/d/1usQCuDdFCH2mXSPaHnjMLQArGqeUDtk6/view?usp=sharing"  target="_blank" ><b>Check out the video in more detail</b></a>
-      </div>
-    </div>
-    
-  </div>
-</div>
+         <!-- the new cursor -->
+          <div class="ball">
+              <svg class="cursor__circle" height="64" width="64"><circle cx="32" cy="32" r="16" stroke-width="0"></circle>
+              </svg>
+            </div>
 
-<!-- illustrations Modal -->
-<div class="modal modal-xl fade" id="illustrationsModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <img id="showingImg" src="assets/img/portfolio/aframe.png" alt="">
 
-    <video src="assets/videos/illustrations.mp4" class=" img-fluid under" autoplay loop></video>
-    
-    <div class="modal-content video-content">
-      <div class="modal-body">
-        <p>A small collection of the digital illustrations I have made.</p>
-          <p>Two of these illustrations were made for a presentation at ESS and the rest were made for the project Evergreen.</p>
-          <a class="card-link" href="https://drive.google.com/drive/folders/1DrCRPbDWtsh_RgcpINQ3d-CKAmYaGZhg?usp=sharing"  target="_blank" ><b>Check them out in more detail</b></a>
-      </div>
-    </div>
-    
-  </div>
-</div>
 
-<!-- donut Modal -->
-<div class="modal modal-xl fade" id="donutModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-
-    <video src="assets/videos/donut.mp4" class=" img-fluid under" autoplay loop></video>
-    
-    <div class="modal-content video-content">
-      <div class="modal-body">
-          <p>I've always been interested in learning how to use blender and recently got the oportunity to finally start my journey with this popular tool.</p>
-          <p>This small project, unfortunately, is still not complete, but i plan to keep on working on it after finishing another 3d project I'm doing for school!</p>
-          <p>Although I'm still a begginer, since I've finally got my hands on blender I will be dedicationg more and more of my time on creating all sorts of 3d projects from now on and, hopefully I'll get better at it!</p>
-          
-          <br/>
-          <a class="card-link" href="https://drive.google.com/file/d/1fK-167oxDhn7kEZw74l6LyYNB5siWbL8/view?usp=drive_link" target="_blank" ><b>Check out the video in more detail</b></a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+<script src="assets/js/mainFile.js"></script>
+<script src="assets/js/mainFunctions.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
-
 </html>

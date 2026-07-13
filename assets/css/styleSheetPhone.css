@@ -1,0 +1,737 @@
+/* ============================================================
+   MOBILE RESPONSIVE (Phone & Small Screens)
+   ============================================================ */
+
+/* ---------- Hide scroll-interactive elements on mobile ---------- */
+@media (max-width: 850px) {
+    
+    /* Hide the floating image that follows cursor */
+    #showingImg {
+        display: none !important;
+    }
+
+    /* Hide custom cursor on mobile */
+    .ball {
+        display: none !important;
+    }
+
+    /* Disable blur effects on mobile (they cause performance issues) */
+    .blurover {
+        filter: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+    }
+
+    /* Disable cover image animations */
+    .coverImg {
+        display: none !important;
+    }
+
+    /* Disable filter texture */
+    .filter {
+        display: none !important;
+    }
+
+    /* Disable rotating vector on about me */
+    .abtmeVector {
+        display: none !important;
+    }
+
+    /* Disable background rotator on contact */
+    .background-rotator {
+        display: none !important;
+    }
+
+    /* Disable rotator container */
+    .rotator-div {
+        display: none !important;
+    }
+
+    /* Disable hmove animations (scrolling titles) */
+    .hmove,
+    .hmove2 {
+        display: none !important;
+    }
+    .phonehmove{
+        display: block;
+    }
+
+    /* Fix titleDiv height */
+    .titleDiv {
+        height: auto !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Hide the hover info text */
+    .hoverInfo {
+        display: none !important;
+    }
+
+    /* Simplify navbar - hide nav links, show burger */
+#navbar {
+    transform: none !important;
+    position: fixed !important;
+    bottom: 30px !important;  /* Changed from top */
+    left: 20px !important;   /* Changed from right */
+    bottom: auto !important;    /* Reset top */
+    right: auto !important;  /* Reset right */
+    width: auto !important;
+    flex-direction: column !important;
+    background: transparent !important;
+    padding: 10px !important;
+    z-index: 100 !important;
+}
+
+.navLinks {
+    display: none !important;
+}
+
+#navBtn {
+    display: flex !important;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    position: relative !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    filter: brightness(0) saturate(100%) !important;
+}
+
+    /* Fix navbar difference class */
+    #navbar.difference {
+        mix-blend-mode: normal !important;
+    }
+}
+
+/* ---------- Phone-Specific (max-width: 480px) ---------- */
+@media (max-width: 480px) {
+
+    /* General body */
+    body {
+        font-size: 14px !important;
+        overflow-x: hidden !important;
+        padding: 10px !important;
+    }
+
+    .padded {
+        padding: 10px !important;
+    }
+
+    /* Cover section */
+    .coverContent {
+        position: relative !important;
+        white-space: normal !important;
+        padding-top: 60px !important;
+        margin-bottom: -80%;
+    }
+
+    #Title {
+        font-size: 12vw !important;
+        margin-top: 0 !important;
+    }
+
+    #smallTitle {
+        font-size: 10vw !important;
+        margin-top: 0 !important;
+    }
+
+    #infoContent {
+        /* flex-direction: column !important; */
+        margin-left: 0 !important;
+        margin-bottom: -10px !important;
+        margin-top: 0 !important;
+        gap: 5px !important;
+    }
+
+    #infoContent p {
+        font-size: 14px !important;
+        margin: 2px 0 !important;
+    }
+
+    #hlInfo {
+        margin-left: 0 !important;
+        width: 100% !important;
+    }
+
+    .coverInfo {
+        width: 100% !important;
+        justify-content: flex-start !important;
+    }
+
+    .coverOptions {
+        position: relative !important;
+        margin-top: 50% !important;
+        width: 100% !important;
+        height: auto !important;
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+
+    .coverOpt {
+        font-size: 7vw !important;
+        padding-left: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    #optfront,
+    #optdig,
+    #optweb,
+    #optint {
+        margin-left: 25% !important;
+    }
+
+    .optdiv {
+        margin-bottom: 8px !important;
+        width: 100% !important;
+    }
+
+    .optdiv:nth-of-type(2),
+    .optdiv:nth-of-type(3),
+    .optdiv:nth-of-type(4) {
+        /* margin-left: 0 !important; */
+    }
+
+    .cover {
+        height: auto !important;
+        min-height: 60vh !important;
+    }
+
+    /* Page sections */
+    .pageSection {
+        height: auto !important;
+        min-height: 100vh !important;
+        width: 100% !important;
+        background-image: none !important;
+        margin-bottom: 0 !important;
+    }
+
+    .pagebody {
+        padding: 10px !important;
+    }
+
+    .scrollPage {
+        height: auto !important;
+    }
+
+    /* Text sizes */
+    .titleTxt {
+        font-size: 28px !important;
+    }
+
+    .superTxt {
+        font-size: 8vw !important;
+    }
+
+    .semiTxt {
+        font-size: 3vw !important;
+    }
+
+    .smallTxt {
+        font-size: 2.5vw !important;
+    }
+
+    .bigTxt {
+        font-size: 4vw !important;
+        margin-top: 0 !important;
+    }
+
+    .giantTxt {
+        font-size: 6vw !important;
+        margin-top: 0 !important;
+    }
+
+    /* My Work section */
+    .works {
+        flex-direction: column !important;
+        gap: 5px !important;
+        padding: 10px 0 !important;
+    }
+
+    .worksDesc {
+        width: 100% !important;
+        text-align: left !important;
+        font-size: 14px !important;
+    }
+
+    .workTitle {
+        font-size: 24px !important;
+    }
+
+    .collectionWorks {
+        padding-top: 20px !important;
+        padding-bottom: 20px !important;
+    }
+
+    .collectionWorks hr {
+        margin: 10px 0 !important;
+    }
+
+    /* About Me section */
+    .abtmeContent {
+        flex-direction: column !important;
+        height: auto !important;
+        gap: 20px !important;
+    }
+
+    .abtmeDisplay {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+    .phoneabtmeHead{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .infoPhone{
+        display: none;
+    }
+
+    .abtmeDesc {
+        width: 100% !important;
+        padding: 0 !important;
+        align-self: flex-start !important;
+        text-align: left !important;
+    }
+
+    .abtmeDesc .txtRightAlign {
+        text-align: left !important;
+    }
+
+    #firstName,
+    #lastName {
+        /* margin-top: -40px !important; */
+        margin-right: 0 !important;
+        font-size: 12vw !important;
+        display: inline-block !important;
+        display: block;
+    }
+
+    #firstName {
+        margin-top: 0px;
+        margin-bottom: -70%;
+        /* margin-right: 10px !important; */
+    }
+
+    #lastName {
+        margin-left: 0 !important;
+    }
+
+    .abtmeHead {
+        gap: 5px !important;
+        margin-top: 10px !important;
+        margin-bottom: 10px !important;
+    }
+    
+    .abtmeHead p {
+        font-size: 14px !important;
+        margin: 2px 0 !important;
+    }
+
+    .thumbnail {
+        width: 100% !important;
+        max-height: 300px !important;
+        object-fit: cover !important;
+    }
+
+    .outlined {
+        background-size: 80% !important;
+        padding: 2px 5px !important;
+    }
+
+     /* ---------- SKILLS SECTION - DISABLE MARQUEE ---------- */
+    .skillsBody {
+        display: flex;
+        /* height: auto !important; */
+        width: 100% !important;
+        padding: 10px !important;
+
+        height: 80vh;
+        align-self: center;
+        justify-self: center;
+    }
+
+    .skillsContent {
+        width: 100% !important;
+        overflow: visible !important;
+    }
+    
+    /* Disable marquee container overflow and animation */
+    .marquee-container {
+        overflow: visible !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        will-change: auto !important;
+        
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .marquee-track {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 8px !important;
+        /* width: 100% !important; */
+
+        align-self: center;
+        justify-self: flex-end;
+    }
+
+    /* Turn each marquee line into a wrapped list */
+    .marquee-line {
+        display: flex !important;
+        flex-wrap: wrap !important;
+        gap: 5px 10px !important;
+        white-space: normal !important;
+        width: 100% !important;
+        animation: none !important; /* Disable animation */
+        transform: none !important;
+        padding: 5px 0 !important;
+
+    }
+
+    .marquee-line span {
+        font-size: 14px !important;
+        padding: 0px 0 !important;
+        white-space: wrap !important;
+        display: inline-block !important;
+        flex-shrink: 0 !important;
+    }
+    .skillDuplicate{
+        display: none;
+    }
+
+    .marquee-line img {
+        /* display: none !important; */
+    }
+
+    /* Override any existing animation */
+    .right-to-left,
+    .left-to-right {
+        animation: none !important;
+        animation-play-state: paused !important;
+    }
+
+    /* Hover state - no animation */
+    .marquee-container:hover .marquee-line {
+        animation: none !important;
+        animation-play-state: paused !important;
+    }
+
+    /* Contact section */
+    .contactContent {
+        flex-direction: column !important;
+        gap: 20px !important;
+        padding: 10px 0 !important;
+    }
+    .phonecontactHead{
+        display: none;
+    }
+
+    .socialsList {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
+
+    .socialsList .contact-item {
+        font-size: 16px !important;
+        padding: 8px 0 !important;
+    }
+
+    .contact-item .contact-number {
+        font-size: 14px !important;
+        margin-right: 10px !important;
+    }
+
+    /* Back to top button */
+    .BackToTop {
+        height: 80px !important;
+        width: 100% !important;
+        margin-top: 20px !important;
+    }
+
+    .BackToTop button {
+        font-size: 30px !important;
+        margin-bottom: 0 !important;
+    }
+
+    /* Menu */
+    .menu {
+        top: 0 !important;
+        height: 100vh !important;
+        width: 100vw !important;
+        padding: 20px !important;
+        z-index: 9999 !important;
+    }
+
+    .menuOptions {
+        width: 100% !important;
+    }
+
+    .menuOptions .optdiv {
+        margin-left: 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    .menuOptions .coverOpt {
+        font-size: 8vw !important;
+        padding-left: 0 !important;
+    }
+
+    .menuOptions hr {
+        margin: 10px 0 !important;
+    }
+
+    /* Individual work page */
+    .rowJustified {
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .rowJustified.alignDown {
+        align-items: flex-start !important;
+    }
+
+    .rowJustified.alignedUp {
+        align-items: flex-start !important;
+    }
+
+    .displayImgs {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 15px !important;
+    }
+
+    .displayImg {
+        width: 100% !important;
+        margin-left: 0 !important;
+        aspect-ratio: 16/9 !important;
+    }
+
+    .displayVideo {
+        width: 100% !important;
+    }
+
+    #projectDesc {
+        width: 100% !important;
+        text-align: left !important;
+        margin-top: 10px !important;
+    }
+
+    #linksList {
+        width: 100% !important;
+        text-align: left !important;
+    }
+
+    #linksList a {
+        font-size: 16px !important;
+        padding: 8px 0 !important;
+        display: block !important;
+    }
+
+    #nextUp {
+        justify-content: flex-start !important;
+        margin-top: 30px !important;
+    }
+
+    #nextUp .coverOpt {
+        font-size: 6vw !important;
+    }
+
+    .colJustified {
+        gap: 10px !important;
+    }
+
+    /* Close up pics */
+    .picsCloseUp {
+        top: 0 !important;
+        height: 100vh !important;
+        width: 100vw !important;
+        margin-left: 0 !important;
+        padding: 20px !important;
+    }
+
+    .PicBig {
+        width: 100% !important;
+    }
+
+    #closeUpImg {
+        aspect-ratio: 16/9 !important;
+        object-fit: contain !important;
+    }
+
+    /* Hide scroll interactions */
+    .coverOptions .coverOpt:hover {
+        background-image: none !important;
+    }
+
+    /* Fix navbar on mobile */
+    #navbar {
+        top: 15px !important;
+        right: 15px !important;
+        padding: 5px !important;
+    }
+
+    #navBtn {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+
+    /* Fix interactive elements on mobile */
+    .interactable {
+        cursor: default !important;
+    }
+
+    .interactable:hover {
+        font-style: normal !important;
+    }
+
+    /* Fix hr */
+    hr {
+        margin: 15px 0 !important;
+    }
+
+    /* Fix exit link in work page */
+    .interactLinks {
+        font-size: 16px !important;
+        margin-top: 10px !important;
+    }
+
+    /* *******WORKS */
+    /* ---------- INDIVIDUAL WORK PAGE - FULL COLUMN ---------- */
+    #projectSowing {
+        width: 100% !important;
+        padding: 10px !important;
+        box-sizing: border-box !important;
+        display: block;
+    }
+
+    /* Make EVERYTHING a column */
+    #projectSowing .rowJustified {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+        gap: 10px !important;
+        width: 100% !important;
+        display: inline-block;
+    }
+
+    /* Exit link */
+    .interactLinks {
+        width: 100% !important;
+        /* text-align: left !important; */
+        margin: 0 !important;
+    }
+
+    .interactLinks a {
+        font-size: 14px !important;
+    }
+
+    /* Video */
+    .displayVideo {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16/9 !important;
+        object-fit: cover !important;
+        display: inline-block;
+    }
+
+    /* Description - FIXED WRAPPING */
+    #projectDesc {
+        width: 100% !important;
+        text-align: left !important;
+        font-size: 14px !important;
+        line-height: 1.6 !important;
+        word-wrap: break-word !important;
+        overflow-wrap: break-word !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        display: inline-block;
+    }
+
+    /* Links list */
+    #linksList {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: row !important;
+        gap: 5px !important;
+        /* text-align: left !important; */
+        margin: 0 !important;
+        padding: 0 !important;
+        align-self: flex-end;
+        justify-self: flex-end;
+    }
+
+    #linksList a {
+        font-size: 14px !important;
+        padding: 5px 0 !important;
+        display: block !important;
+        width: 100% !important;
+        /* text-align: left !important; */
+        word-wrap: break-word !important;
+    }
+
+    /* Images container - FIXED */
+    .displayImgs {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 12px !important;
+        align-items: stretch !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .displayImg {
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16/9 !important;
+        object-fit: cover !important;
+        margin: 0 !important;
+        border-radius: 8px !important;
+    }
+
+    /* Next project */
+    #nextUp {
+        width: 100% !important;
+        display: flex !important;
+        justify-content: flex-end !important;
+        margin-top: 20px !important;
+        padding: 0 !important;
+    }
+
+    #nextUp .coverOpt {
+        font-size: 18px !important;
+        text-align: left !important;
+    }
+
+    /* Fix hr */
+    #projectSowing hr {
+        width: 100% !important;
+        margin: 12px 0 !important;
+    }
+
+    /* Fix colJustified */
+    .colJustified {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5px !important;
+        width: 100% !important;
+    }
+    
+    .phoneWorkTitle{
+        display: flex;
+        flex-direction: row;
+        /* justify-content: space-between; */
+        /* align-items: flex-end; */
+        text-align: end;
+        display: none;
+        .rowJustified.alignDown{
+            flex-direction: row-reverse;
+        }
+    }
+
+}

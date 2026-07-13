@@ -7,6 +7,7 @@
     <link href="assets/img/Vector.svg" rel="icon">
 
     <link href="assets/css/styleSheet.css" rel="stylesheet">
+    <link href="assets/css/styleSheetPhone.css" rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/n27" rel="stylesheet">
 
 </head>
@@ -14,17 +15,20 @@
 
 <div id="projectSowing" class="blurover">
 
-        <div class="rowJustified alignDown">
+        <div class="rowJustified alignDown phoneWorkTitle">
                 
-            <h1 id="projectTitle" class="alignDown" ></h1>
-        <div class="interactLinks">
-            <a href="/new.html#mywork" class="">exit</a>
+            <h1 id="project-name" class="alignDown" ></h1>
+            <div class="interactLinks">
+                <a href="./new.html#mywork" class="">exit</a>
+            <!-- <a href="javascript:history.back()" class="interactable">exit</a> -->
+            </div>
         </div>
-    </div>
+        
     <hr />
 
     <div class="rowJustified alignDown">
-        <video id="projectVideo" src="assets/videos/donut.mp4" class="img-fluid under displayVideo" autoplay loop></video>
+        <!-- <video id="videoEl" src="assets/videos/donut.mp4" class="img-fluid under displayVideo" autoplay loop></video> -->
+         <video id="videoEl" class="img-fluid under displayVideo" autoplay loop muted playsinline></video>
         
         <p id="projectDesc">donut</p>
     </div>
@@ -32,21 +36,24 @@
     
     <div class="rowJustified alignedUp">
         <div id="linksList" class="navLinks colJustified">
-            <a href="#" target="_blank" class="semiTxt">Check it out</a>
-            <a href="#" target="_blank" class="semiTxt">Check out the code</a>
-            <a href="#" target="_blank" class="semiTxt">Check out the design</a>
+            <a href="#" target="_blank" class="semiTxt interactable">Check it out</a>
+            <a href="#" target="_blank" class="semiTxt interactable">Check out the code</a>
+            <a href="#" target="_blank" class="semiTxt interactable">Check out the design</a>
         </div>
-
+        
         <div class="displayImgs">
-            <img src="/assets/img/portfolio/donut.png" alt="" id="projectImg" class="displayImg">
-            <img src="/assets/img/portfolio/donut.png" alt="" id="projectImg2" class="displayImg">
+
+            <img class="interactable displayImg" src="" alt="" id="" onclick="OpenPic()">
+            <img class="interactable displayImg" src="" alt="" id="" onclick="OpenPic()">
+            <img class="interactable displayImg" src="" alt="" id="" onclick="OpenPic()">
+            <img class="interactable displayImg" src="" alt="" id="" onclick="OpenPic()">
         </div>
     </div>
 </div>
     
         <div id="nextUp">
             <!-- <a href="./mywork.html?project=exUnity"> -->
-                <span onclick="NextProject()" class="coverOpt superTxt" > next p<span class="italic">r</span><span class="cyrene">o</span>ject <span class="green">↘</span></span>
+                <span onclick="NextProject()" class="coverOpt superTxt interactable" > next p<span class="italic">r</span><span class="cyrene">o</span>ject <span class="green">↘</span></span>
             <!-- </a> -->
         </div>
     
@@ -57,8 +64,17 @@
               </svg>
 
             </div>
+
+<!-- ** close up pics -->
+        <div class="picsCloseUp padded invisible" onclick="OpenPic()" id="">
+            <div class="PicBig">
+                <img src="" alt="" id="closeUpImg">
+            </div>
+        </div>
          
-            <script src="assets/js/mainFunctions.js"></script>
-         <script src="assets/js/workFile.js"></script>
+<script src="assets/js/mainFunctions.js"></script>
+<!-- <script src="assets/js/workFile.js"></script> -->
+
+<script src="assets/js/project-loader.js"></script>
 </body>
 </html>

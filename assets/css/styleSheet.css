@@ -5,17 +5,15 @@ green #3AE170      alternative #7B9F60
 purple #713D92*/
 
 /* custom fonts */
-@font-face {
-    font-family: 'n27';
-
-    font-family: 'cyrene';
-    src:  url('/assets/fonts/CyreneRegular.woff2') format('woff2'),
-          url('/assets/fonts/CyreneRegular.woff') format('woff');
-    font-style: normal;
-    
-}
 @import url('https://fonts.cdnfonts.com/css/n27');
 
+@font-face{
+    font-family: 'cyrene';
+    src: url('../fonts/CyreneRegular.woff2') format('woff2'),
+         url('../fonts/CyreneRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .invisible{
     display: none;
@@ -27,11 +25,8 @@ purple #713D92*/
 /** cursor */
 html {
     cursor: none;
-}
-
-html{
     scroll-behavior: smooth;
-  }
+}
 
 body{
     /* animationn */
@@ -50,18 +45,25 @@ body{
 
     /** cursor */
     .cursor__circle{
+        z-index: 2;
         pointer-events: none;
         overflow-y : none;
         position: fixed;
+        transition: transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
         /* transition: 0.5s ease; */
         /* opacity: 30%; */
-            
+
             circle {
                 fill:#121113;
                 fill: white;
                 /* mix-blend-mode: difference; */
             }
     }
+}
+
+.interactable:hover ~ .cursor__circle,
+body:has(.interactable:hover) .cursor__circle {
+    transform: scale(2.8);
 }
 
 @-webkit-keyframes moveToTop {
@@ -76,18 +78,21 @@ body{
 .ball{
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 2;
     mix-blend-mode:difference;
+    pointer-events: none;
 }
 
 a{
     text-decoration: none;
     color:#121113;
-    transition: 1s ease-in-out1;
     cursor: none;
+    transition-delay: -3s;
 }
 
 a:hover{
+    transition: 0.1s ease-in-out;
+    /* transition-delay: -3s; */
     font-style: italic;
     color:#121113;
 }
@@ -114,8 +119,6 @@ a:hover{
 .txtRightAlign{
     text-align: end;
 }
-
-
 .alignDown{
     align-items: end;
     margin: 0px;
@@ -128,10 +131,29 @@ hr{
     border: 1px solid #121113;
     width: 100%;
 }
-
 .menu{
-    margin-top: 5%;
+    /* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+    margin-top: 3%;
+    /* display: flex; */
+    align-items: center;
+    justify-content: center;
+    margin-left: -2%;
+    transition: .4s ease-out;
+}
+.menuOptions{
+    width: 80%;
 
+}
+.optdiv:nth-of-type(2){
+    margin-left: 10vw;
+}
+
+.optdiv:nth-of-type(3){
+    margin-left: 5vw;
+}
+
+.optdiv:nth-of-type(4){
+    margin-left: 15vw;
 }
 
 /* ------------------------------- COVER */
@@ -165,19 +187,20 @@ hr{
     transition: .4s ease-out;
 }
 #Title{
-    margin-top: -3%;   
+    margin-top: -3%;
     font-size: 15vw;
 }
 #smallTitle{
     margin-top: -3%;
-    font-size: 10vw;
+    font-size: 8vw;
 }
 .italic{
     font-style: italic;
 }
 .cyrene{
-    font-family: cyrene;
+    font-family: 'cyrene';
     font-style: normal;
+    font-weight: normal;
 }
 .green{
     color: #3AE170;
@@ -204,10 +227,14 @@ hr{
     justify-content: flex-end;
 
 }
+.optdiv{
+    margin-bottom: 15px;
+}
 
 .coverOptions{
     position: fixed;
     margin-top: -12%;
+    /* margin-left: -2%; */
     width: 98vw;
     height: 50vh;
     /* text-align: right; */
@@ -217,40 +244,41 @@ hr{
     align-items: flex-end;
 }
 .coverOpt{
-    margin: 10px 0 10px 0;
+    /* margin: 10px 0 500px 0; */
     align-self: flex-end;
     transition: .4s ease-out;
     padding-left: 40px;
-    padding-bottom: 10px;    
+    /* margin-bottom: 100px; */
 }
 
 #divWeb{
     background-position: revert;
 }
 #optfront{
-    margin-left: -30%;
+    margin-left: -40%;
+}
+#optdig{
+    margin-left: -70%;
 }
 #optweb{
-    margin-left: -60%;
+    margin-left: -5%;
 }
 #optint{
-    margin-left: -15%;
+    margin-left: -25%;
 }
 
 .coverOpt:hover{
-    background-image: url('../img/circle.svg');
+    background-image: url('../img/circle_middle.svg');
     background-repeat: no-repeat;
     background-size: 90% 100%;
     background-position: center;
     /* cursor: pointer; */
 }
-/* .optdiv{
-    transition:transform 500ms ease;
-} */
+
 /* .coverOpt:hover{
     background-image: url('../assets/img/circle.svg');
     transform:scale(1.6);
-    
+
     #Title{
         filter: blur(20px);
     }
@@ -270,7 +298,11 @@ hr{
     height: 100vh;
 }
 
-/* ---............................... for the navbar*/
+.phonehmove{
+    display:none;
+}
+
+/** ---............................... for the navbar*/
 
 @keyframes close {
     0% {
@@ -323,7 +355,7 @@ hr{
     transform: rotate(-90deg);
     position: fixed;
     bottom: 35vh;
-    left:-35vh;    
+    left:-35vh;
     align-items: flex-start;
     transition: .4s ease-out;
 
@@ -335,16 +367,17 @@ hr{
     display:flex;
     flex-direction: row-reverse;
     text-align: center;
-    /*! jdkhed */
+    /*!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11 jdkhed */
     transition: .4s ease-out;
     /* animation: none; */
 }
 .navLinks div{
     position: relative;
-    width: 15vh;
-    transition: .4s ease-out;
+    width: 16vh;
+    transition: 0.9s ease-out;
+    transition: dissolve 0.9s ease-out;
     a{
-        width: 13vh;
+        width: 14vh;
         /* position: relative; */
         /* padding: 1vh; */
         position: absolute;
@@ -354,19 +387,19 @@ hr{
 
 a.navLinks :hover{
     font-style: italic;
-    transition-delay: -3s;
+    /* transition-delay: -3s; */
 }
-/* .navLinks a:hover:before{
+.navLinks a:hover:before{
+    font-style: italic;
+    content: "> ";
+}
+/* .menuLink:hover:before{
     font-style: italic;
     content: "> ";
 } */
-.interactLinks a:hover:before{
-    font-style: italic;
-    content: "> ";
-}
 
 
-/* --------------------------------- for pages*/
+/** --------------------------------- for pages*/
 
 .pageTitle{
     margin-top: -10px;
@@ -400,6 +433,7 @@ a.navLinks :hover{
     /* left: 1; */
     /* animation: hmove 20s linear infinite; */
     /* left: var(percentScroll); */
+    transition: translate 0.7s ease-out;
     overflow: clip;
 }
 
@@ -423,12 +457,12 @@ a.navLinks :hover{
     background-color: #F0F0EB;
     margin-bottom: -10px;
     transform: .3s ease;
-    
+
     background-image: url("/assets/img/rectTest.png");
     background-size: 100%;
-    
+
     width: 100vw;
-    /* height: 100vh; */
+    height: 100vh;
 
     /* display: flex; */
 }
@@ -475,7 +509,7 @@ a.navLinks :hover{
 #showingImg{
     position: fixed;
     pointer-events: none;
-    
+
     transition: 0.5s ease;
     height: 400px;
     display: none;
@@ -510,7 +544,7 @@ a.navLinks :hover{
 } */
 
 .worksDesc{
-    width: 20%;
+    width: 25%;
 }
 
 #projectDesc{
@@ -534,55 +568,6 @@ a.navLinks :hover{
     justify-content: space-between;
 }
 
-.displayImgs{
-    width: 70%;
-    align-items: end;
-}
-.displayImg{
-    margin-left: 10px;
-    width: 48%;
-}
-
-.displayVideo{
-    width: 65%;
-    /* aspect-ratio: 19 / 6; */
-}
-
-#linksList{
-    /* width: 20%; */
-    text-align: start;
-}
-
-#nextUp{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    margin-top: 60px;
-
-    /* position: absolute;
-    bottom: 0; */
-    /* margin-bottom: 20px; */
-
-    a{
-        font-style: normal;
-    }
-}
-
-/* -------------------------------------- about me */
-#lastName, #firstName {
-    margin-top: -70px;
-    margin-left: -40px;
-    position: relative;
-}
-#lastName{
-    margin-top: -120px;
-    margin-left: 5px;
-}
-
-.smallTxt, .mediumTxt, .bigTxt, .biggerTxt{
-    /* margin-top: -30%; */
-}
-
 .smallTxt{
     font-size: 1.5vw;
     margin-top: -10px;
@@ -601,23 +586,449 @@ a.navLinks :hover{
     margin-top: -40px;
 }
 .giantTxt{
-    font-size: 9vw;
+    font-size: 7vw;
     margin-top: -50px;
 }
+/** -------------------------------------- about me */
+#lastName, #firstName {
+    margin-top: -125px;
+    margin-right: -40px;
+    position: relative;
+    justify-self: flex-end;
+}
+#lastName{
+    margin-top: -120px;
+    margin-left: 5px;
+}
+#firstName{
+    margin-right: 90px;
+}
 
+
+.abtmeContent{
+    height: 93%;
+}
+
+.abtmeHead{
+    margin-bottom: -20px;
+    margin-top: -10px;
+}
+.abtmeDisplay{
+    /* align-self: center;
+    justify-self: center; */
+    margin-top: 20px;
+    /* margin-left: 20px; */
+    /* align-self: end; */
+    width: 45vw;
+}
+
+.abtmeVector{
+    pointer-events: none;
+    position: absolute;
+    margin-top: -70vh;
+    margin-left: 36vw;
+    height: 30vh;
+}
+
+.abtmeDesc{
+    align-self: flex-end;
+    /* margin-bottom: 50px; */
+    padding: 20px;
+    width: 30vw;
+    justify-self: flex-end;
+}
+
+.outlined{
+    background-image: url('../img/circle_thick.svg');
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: center;
+    font-weight: bold;
+    font-style: italic;
+
+    padding: 5px 5px;
+    display: inline-block;
+}
+/** -------------------------------------- my skills */
 
 /*! PENULTIMA SECCAO */
 #mysrvcs{
-    display: none;
+    /* display: none; */
+    /* display: flex; */
+}
+.outlinedSkill{
+    background-image: url('../img/circle.svg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
 }
 
-/*----------------------------------------- contact me*/
+
+.skillsVector{
+    width: 5vw;
+    /* !!!!!!!!!!!!!!!!!!!!!!!! NOT SURE ABOUT THIS ONE */
+    animation: rotateImage 5s linear infinite;
+    /* animation-play-state: paused; */
+}
+.greenVector{
+    filter: invert(71%) sepia(18%) saturate(721%) hue-rotate(50deg) brightness(92%) contrast(86%);
+}
+.skillsBody{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 90%;
+    width: 100vw;
+}
+.hoverInfo{
+    padding-right: 60px;
+}
+
+.skillsContent{
+    justify-content: center;
+    width: 100vw;
+}
+
+.marquee-container {
+    overflow: hidden;
+    margin-left: -2%;
+    will-change: transform;
+}
+
+.marquee-track {
+    display: flex;
+    flex-direction: column;
+    /* gap: 20px; */
+}
+
+.marquee-line {
+    display: flex;
+    /* gap: 40px; */
+    white-space: nowrap;
+    width: max-content;
+}
+
+/* Right to Left Animation */
+.right-to-left {
+    animation: scrollRightToLeft 30s linear infinite;
+    animation-play-state: paused;
+}
+
+/* Left to Right Animation */
+.left-to-right {
+    animation: scrollLeftToRight 30s linear infinite;
+    animation-play-state: paused;
+}
+
+/* @keyframes scrollRightToLeft {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+
+@keyframes scrollLeftToRight {
+    0% {
+        transform: translate3d(-50%, 0, 0);
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+    }
+} */
+
+@keyframes scrollRightToLeft {
+    0% {
+        transform: translateX(0); /* Force GPU acceleration */
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes scrollLeftToRight {
+    0% {
+        transform: translateX(-50%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* Optional: Add hover pause */
+.marquee-container:hover .marquee-line {
+    /* animation-play-state: paused; */
+    animation-play-state: running;
+    /* !!!!!!!!!!!!!!!!!!!!!!!! NOT SURE ABOUT THIS ONE - either it always rotates or just rotates on hover */
+    /* .skillsVector{
+        animation-play-state: running;
+    } */
+}
+
+/* Style your spans */
+.marquee-line span {
+    padding: 5px 0;
+    display: inline-block; /* Helps with rendering */
+}
+
+/* Style your images */
+.marquee-line img {
+    display: inline-block;
+    vertical-align: middle; /* Aligns with text */
+    flex-shrink: 0; /* Prevents image from shrinking */
+}
+
+
+
+/** ----------------------------------------- contact me*/
 .socialsList{
-    width: 30%;
-    align-self: flex-end;
+    width: 35%;
 }
 
-/* --------------------------------------- screens */
+.contactContent{
+    display: flex;
+    div:nth-child(2){
+        margin-top: 25vh;
+        margin-right: 20px;
+    }
+}
+
+.contact-item:hover {
+    /* padding-left: 1vw; */
+    transition: 0.1s ease;
+    transition-delay: -3s;
+    span:nth-child(2):before{
+        content: "> ";
+    }
+    a:before{
+        content: "";
+    }
+}
+
+/* ALTERNATIVE FOR NOT HAVING IT SPIN */
+#contactme{
+    /* background-image: url("../img/vector_bg.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: -15vw 40vh; */
+    /* animation: rotateImage 20s linear infinite; */
+}
+
+.rotator-div{
+    /* clip-path: inset(0 0 66% 0); */
+    position: absolute;
+    overflow: hidden; /* This clips/cuts off the content */
+    height: 62vh; /* Or whatever height you want - adjust this */
+    width: 100vw; /* Or your desired width */
+    margin-top: 30vh;
+    /* margin-bottom: -60vh; */
+    margin-left: -20vw;
+    pointer-events: none;
+
+    justify-self: flex-start;
+    justify-content: flex-end;
+}
+
+.background-rotator{
+    animation: rotateImage 20s linear infinite;
+    /* z-index: 5; */
+    width: 55vw;
+    position: absolute;
+    
+
+    /* justify-self: center;
+    justify-content: center; */
+    /* text-align: center; */
+    /* left: 50%;
+    right: 50%; */
+    /* margin: 0 50vw 0; */
+}
+
+@keyframes rotateImage {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+/** --------------------------------------- for the footer */
+.BackToTop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    position: relative;
+    overflow: hidden;
+    height: 16vh;
+    width: 10%;
+    margin-top: 3vh;
+    /* margin-bottom: -13vh; */
+}
+
+button{
+    background-color: transparent;
+    border: none;
+    font-family: 'N27', sans-serif;
+    font-size: 2vw;
+    margin-bottom: -15vh;
+    /* margin-bottom: -5vh; */
+}
+
+@keyframes subtleJump {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        /* transform: translateY(-9px); */
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+button:hover {
+    animation: subtleJump 0.4s ease;
+}
+
+.menu{
+    /* left: 691px; */
+    position: fixed;
+    top: -100px;
+    width: 100vw;
+    height: 105vh;
+    background-color: #F0F0EB;
+}
+
+
+/* ** ----------------------------------INDIVIDUAL WORKS PAGE -------------------------------------- */
+
+.displayImgs{
+    width: 70%;
+    align-items: end;
+    display: grid;
+    row-gap: 20px;
+    flex-wrap: wrap;
+}
+.displayImg{
+    /* align-self: flex-end;
+    justify-content: flex-end;
+    justify-self: flex-end; */
+    margin-left: 10px;
+    width: 49%;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+    /* height: ; */
+}
+
+.displayVideo{
+    width: 65%;
+    /* aspect-ratio: 19 / 6; */
+}
+
+#linksList{
+    /* width: 20%; */
+    text-align: start;
+}
+#projectDesc{
+    width: 30%;
+}
+
+#nextUp{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-top: 60px;
+
+    /* position: absolute;
+    bottom: 0; */
+    /* margin-bottom: 20px; */
+
+    a{
+        font-style: normal;
+    }
+}
+
+.picsCloseUp{
+    position: fixed;
+    top: -40px;
+    width: 100vw;
+    height: 105vh;
+    background-color: #12111396;
+    align-items: center;
+    justify-content: center;
+    margin-left: -2%;
+}
+.PicBig{
+    width: 80%;
+}
+#closeUpImg{
+    width: 100%;
+    aspect-ratio: 16 / 8;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** scroll bar ------------------------------*/
+.scroll-container {
+  overflow-y: auto;
+  
+  /* 1. Standard Properties (Firefox / Modern Standards) */
+  scrollbar-width: thin;          /* Options: auto | thin | none */
+  scrollbar-color: #741b1b #f1f1f1; /* Format: [thumb color] [track color] */
+}
+
+/* 2. WebKit Pseudo-elements (Chrome, Safari, Edge) */
+.scroll-container::-webkit-scrollbar {
+  width: 8px;     /* Width of vertical scrollbar */
+  height: 8px;    /* Height of horizontal scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color of the tracking area */
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background: #888888; /* Color of the draggable handle */
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background: #555555; /* Color when hovering over the handle */
+}
+
+
+
+
+
+
+
+
+
+
+/** --------------------------------------- screens */
 @media (max-width: 850px) {
     body{
         font-size: 15px;
@@ -628,13 +1039,4 @@ a.navLinks :hover{
         /* width: 98vw;
         height: 50vh; */
     }
-}
-
-.menu{
-    /* left: 691px; */
-    position: fixed;
-    top: -100px;
-    width: 100vw;
-    height: 105vh;
-    background-color: #F0F0EB;
 }
